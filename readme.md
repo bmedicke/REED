@@ -33,3 +33,7 @@ aka. x64
 # executable file formats
 
 ## ELF
+
+## Mach-O
+
+## PE
