@@ -24,6 +24,8 @@
   * [PE](#pe)
 * [tools](#tools)
   * [gdb](#gdb)
+  * [binutils](#binutils)
+  * [python 3](#python-3)
   * [dotfiles](#dotfiles)
 * [exploits](#exploits)
 * [sources and further reading](#sources-and-further-reading)
@@ -83,6 +85,10 @@ aka. x64
 ## gdb
 
 [gdb](gdb)
+
+## binutils
+
+## python 3
 
 ## dotfiles
 
