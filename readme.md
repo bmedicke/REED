@@ -8,6 +8,8 @@
 
 ## virtual memory
 
+## memory layout
+
 ## the stack
 
 # instruction set architectures
