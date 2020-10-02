@@ -22,11 +22,15 @@ aka. ISA
 
 ## instruction sets
 
-### x86_32
+### x86
+
+#### AT&T and Intel syntax
+
+#### x86_32
 
 aka. x86
 
-### x86_64
+#### x86_64
 
 aka. x64
 
