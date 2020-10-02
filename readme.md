@@ -1,8 +1,8 @@
-# architectures
+# computer architectures
 
-## von neumann
+## Von Neumann
 
-## harvard
+## Harvard
 
 # executable file formats
 
