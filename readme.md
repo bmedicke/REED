@@ -26,6 +26,7 @@
   * [gdb](#gdb)
   * [binutils](#binutils)
   * [python 3](#python-3)
+  * [binvis.io](#binvisio)
   * [dotfiles](#dotfiles)
 * [exploits](#exploits)
 * [sources and further reading](#sources-and-further-reading)
@@ -89,6 +90,11 @@ aka. x64
 ## binutils
 
 ## python 3
+
+## binvis.io
+
+* visual analysis of binary files
+* [binvis.io](https://binvis.io/)
 
 ## dotfiles
 
