@@ -4,6 +4,9 @@
 
 ## Harvard
 
+# memory
+
+## virtual memory
 # executable file formats
 
 ## ELF
