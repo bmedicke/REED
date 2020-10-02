@@ -80,4 +80,6 @@ aka. x64
 
 ## gdb
 
+[gdb](gdb)
+
 # sources and further reading
