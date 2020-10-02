@@ -26,6 +26,7 @@
   * [gdb](#gdb)
   * [binutils](#binutils)
   * [python 3](#python-3)
+  * [Compiler Explorer](#compiler-explorer)
   * [binvis.io](#binvisio)
   * [dotfiles](#dotfiles)
 * [exploits](#exploits)
@@ -90,6 +91,11 @@ aka. x64
 ## binutils
 
 ## python 3
+
+## Compiler Explorer
+
+* generates and compares binaries with different compilers and settings
+* [godbolt.org](https://godbolt.org/)
 
 ## binvis.io
 
