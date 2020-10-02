@@ -8,6 +8,8 @@
 
 ## virtual memory
 
+## the stack
+
 # instruction set architectures
 
 aka. ISA
