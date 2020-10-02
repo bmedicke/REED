@@ -23,6 +23,7 @@
   * [Mach-O](#mach-o)
   * [PE](#pe)
 * [tools](#tools)
+  * [gdb](#gdb)
 * [sources and further reading](#sources-and-further-reading)
 
 <!-- vim-markdown-toc -->
@@ -76,5 +77,7 @@ aka. x64
 ## PE
 
 # tools
+
+## gdb
 
 # sources and further reading
