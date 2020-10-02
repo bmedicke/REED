@@ -1,6 +1,5 @@
 # basics
-
-<!-- vim-markdown-toc GitLab -->
+<!-- vim-markdown-toc GFM -->
 
 * [computer architectures](#computer-architectures)
   * [Von Neumann](#von-neumann)
