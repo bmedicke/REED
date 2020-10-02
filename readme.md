@@ -24,6 +24,7 @@
   * [PE](#pe)
 * [tools](#tools)
   * [gdb](#gdb)
+* [exploits](#exploits)
 * [sources and further reading](#sources-and-further-reading)
 
 <!-- vim-markdown-toc -->
@@ -81,5 +82,9 @@ aka. x64
 ## gdb
 
 [gdb](gdb)
+
+# exploits
+
+[exploits](exploits)
 
 # sources and further reading
