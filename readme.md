@@ -24,6 +24,7 @@
   * [PE](#pe)
 * [tools](#tools)
   * [gdb](#gdb)
+  * [dotfiles](#dotfiles)
 * [exploits](#exploits)
 * [sources and further reading](#sources-and-further-reading)
 
@@ -82,6 +83,10 @@ aka. x64
 ## gdb
 
 [gdb](gdb)
+
+## dotfiles
+
+[dotfiles](dotfiles)
 
 # exploits
 
