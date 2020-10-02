@@ -23,9 +23,9 @@
   * [Mach-O](#mach-o)
   * [PE](#pe)
 * [tools](#tools)
-  * [gdb](#gdb)
+  * [GDB](#gdb)
   * [binutils](#binutils)
-  * [python 3](#python-3)
+  * [Python 3](#python-3)
   * [Compiler Explorer](#compiler-explorer)
   * [binvis.io](#binvisio)
   * [dotfiles](#dotfiles)
@@ -84,13 +84,13 @@ aka. x64
 
 # tools
 
-## gdb
+## GDB
 
-[gdb](gdb)
+[GDB](gdb)
 
 ## binutils
 
-## python 3
+## Python 3
 
 ## Compiler Explorer
 
