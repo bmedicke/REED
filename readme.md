@@ -113,6 +113,8 @@ aka. ISA
 
 ### x86
 
+See [[inteldev]](#sources-and-further-reading).
+
 #### AT&T and Intel syntax
 
 #### x86_32
@@ -196,4 +198,5 @@ See [[binutils]](#sources-and-further-reading).
 
 * [C11] ISO, & IEC. (2010). ISO/IEC 9899:201x, International Standard Programming languages — C, Committee Draft (N1570 ed.). ISO/IEC. Retrieved from http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
 * [binutils] GNU Binary Utilities. (2002). Retrieved from http://www.gnu.org/software/binutils/manual/
+* [inteldev] Intel. (2011). Intel 64 and IA-32 Architectures Software Developer’s Manual Combined Volumes. System, 3(253665). https://doi.org/10.1109/MAHC.2010.22
 * [pracbin] Andriesse, D., & Francisco, S. (2018). PRACTICAL BINARY ANALYSIS Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly (2nd ed.). Starch Press.
