@@ -88,7 +88,7 @@ int main(int argc, char** argv, char** envp)
 
 <img src="media/stages-of-compilation.jpg"></img>
 
-* assumed compilation with `gcc --save-temps stages.c`
+* produced filenames assume compilation with `gcc --save-temps stages.c`
   * on macOS gcc is llvm in disguise and will produce an additional `stages.bc` bitcode file
 
 ## preprocessor
