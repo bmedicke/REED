@@ -120,3 +120,6 @@ aka. x64
 [exploits](exploits)
 
 # sources and further reading
+
+
+* Andriesse, D., & Francisco, S. (2018). PRACTICAL BINARY ANALYSIS Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly (2nd ed.). Starch Press. Retrieved from https://lccn.loc.gov/2018040696
