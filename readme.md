@@ -84,6 +84,7 @@ int main(int argc, char** argv, char** envp)
 
 * *note:* using a `main()` signature with `envp` does not conform to POSIX but is widely supported by Unix-like systems and mentioned as a common alternative in the C standard ([[C11, Annex J.5.1, p. 575]](#sources-and-further-reading))
 
+<img src="media/stages-of-compilation.jpg"></img>
 
 ## preprocessor
 
