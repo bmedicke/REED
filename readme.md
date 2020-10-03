@@ -81,6 +81,10 @@ int main(int argc, char** argv, char** envp)
   return EXIT_SUCCESS;
 }
 ```
+
+* *note:* using a `main()` signature with `envp` does not conform to POSIX but is widely supported by Unix-like systems and mentioned as a common alternative in the C standard ([[c11, Annex J.5.1, p. 575]](#sources-and-further-reading))
+
+
 ## preprocessor
 
 ## compiler
@@ -184,3 +188,4 @@ Dynamic analysis on the other hand executes the binary.
 
 
 * [pracbin] Andriesse, D., & Francisco, S. (2018). PRACTICAL BINARY ANALYSIS Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly (2nd ed.). Starch Press.
+* [c11] ISO, & IEC. (2010). ISO/IEC 9899:201x, International Standard Programming languages — C, Committee Draft (N1570 ed.). ISO/IEC. Retrieved from http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
