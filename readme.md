@@ -22,6 +22,9 @@
   * [ELF](#elf)
   * [Mach-O](#mach-o)
   * [PE](#pe)
+* [binary analysis](#binary-analysis)
+  * [static](#static)
+  * [dynamic](#dynamic)
 * [tools](#tools)
   * [GDB](#gdb)
   * [binutils](#binutils)
@@ -81,6 +84,12 @@ aka. x64
 ## Mach-O
 
 ## PE
+
+# binary analysis
+
+## static
+
+## dynamic
 
 # tools
 
