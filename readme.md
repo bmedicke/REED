@@ -87,7 +87,7 @@ aka. x64
 
 # binary analysis
 
-See [pracbin].
+See [pracbin](#sources-and-further-reading).
 
 ## static
 
