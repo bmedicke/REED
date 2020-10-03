@@ -91,7 +91,28 @@ aka. x64
 
 ## static
 
+Static analysis is the process of gaining information about a binary without running it.
+
+*Pros*
+
+* no need for a CPU with a fitting architecture
+* no need for additional software to run the binary (Kernel, etc.)
+
+*Cons*
+
+* more difficult to reason about due to missing runtime state
+
 ## dynamic
+
+Dynamic analysis on the other hand executes the binary.
+
+*Pros*
+
+* easier, due to additional information (runtime state)
+
+*Cons*
+
+* might miss some code paths
 
 # tools
 
