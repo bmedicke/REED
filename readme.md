@@ -8,6 +8,11 @@
   * [virtual memory](#virtual-memory)
   * [memory layout](#memory-layout)
   * [the stack](#the-stack)
+* [stages of compilation](#stages-of-compilation)
+  * [preprocessor](#preprocessor)
+  * [compiler](#compiler)
+  * [assembler](#assembler)
+  * [linker](#linker)
 * [instruction set architectures](#instruction-set-architectures)
   * [types](#types)
     * [CISC](#cisc)
@@ -50,6 +55,39 @@
 ## memory layout
 
 ## the stack
+
+# stages of compilation
+
+See [[pracbin, p. 12ff]](#sources-and-further-reading).
+
+Let's go through the stages of compilation step by step. We'll use the following example:
+
+**stages.c**
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+#define FORMAT_STRING "%s"
+#define MESSAGE "hello, world!\n"
+
+void greet() {
+  printf(FORMAT_STRING, MESSAGE);
+}
+
+int main(int argc, char** argv, char** envp)
+{
+  greet();
+  return EXIT_SUCCESS;
+}
+```
+## preprocessor
+
+## compiler
+
+## assembler
+
+## linker
 
 # instruction set architectures
 
