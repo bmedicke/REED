@@ -170,6 +170,8 @@ Dynamic analysis on the other hand executes the binary.
 
 ## binutils
 
+See [[binutils]](#sources-and-further-reading).
+
 ## Python 3
 
 ## Compiler Explorer
@@ -192,6 +194,6 @@ Dynamic analysis on the other hand executes the binary.
 
 # sources and further reading
 
-
 * [pracbin] Andriesse, D., & Francisco, S. (2018). PRACTICAL BINARY ANALYSIS Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly (2nd ed.). Starch Press.
 * [C11] ISO, & IEC. (2010). ISO/IEC 9899:201x, International Standard Programming languages — C, Committee Draft (N1570 ed.). ISO/IEC. Retrieved from http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+* [binutils] GNU Binary Utilities. (2002). Retrieved from http://www.gnu.org/software/binutils/manual/
