@@ -110,6 +110,8 @@ turn a myriad of countermeasures.
 
 # memory
 
+TODO source this section
+
 ## virtual memory
 
 ## memory layout
