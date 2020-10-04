@@ -1,5 +1,10 @@
 # RE🌾ED
 
+notes about reverse engineering and exploit development
+
+
+# toc
+
 <!-- vim-markdown-toc GFM -->
 
 * [computer architectures](#computer-architectures)
