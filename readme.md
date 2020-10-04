@@ -11,6 +11,7 @@ notes about reverse engineering and exploit development
   * [Von Neumann](#von-neumann)
   * [Harvard](#harvard)
   * [modern processors](#modern-processors)
+    * [consequences](#consequences)
 * [memory](#memory)
   * [virtual memory](#virtual-memory)
   * [memory layout](#memory-layout)
@@ -97,6 +98,14 @@ to be more specific split-cache/almost Von Neumann architecture.
 
 *As such modern CPUs are situated somewhere between a pure Von Neumann and a
 pure Harvard architecture.*
+
+### consequences
+
+The - by the Von Neumann architecture - historically caused consolidation of data
+(that can be freely written by the process)
+and instructions (that are executed by the CPU)
+in the same memory has led to countless memory corruption exploits and in
+turn a myriad of countermeasures.
 
 # memory
 
