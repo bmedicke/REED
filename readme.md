@@ -114,7 +114,8 @@ tree
 
 <img src="media/stages-of-compilation.jpg"></img>
 
-* produced filenames assume compilation with `--save-temps`
+* *note the following:*
+  * produced filenames assume compilation with `--save-temps`
   * on macOS gcc is llvm in disguise and will produce an additional `.bc` bitcode file
 
 ## preprocessor
