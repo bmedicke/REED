@@ -276,7 +276,45 @@ xxd stages.o | head -n 1 # hex dump.
   * **each object files is compiled on its own and thus has no idea of memory addresses of other object files**
   * ELF files start with a bit of *magic*: `0x7F` and then the ASCII characters `E`, `L`, `F`
 
+---
+
+C and other high level languages refer to functions and variables with
+human readable (symbolic) names. This makes it easier for the programmer.
+The CPU on the other hand refers to them directly via memory addresses.
+
+A symbol table is a mapping between the two.
+
+**symbol table via `readelf --syms stages.o`**
+
+```sh
+Symbol table '.symtab' contains 14 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND
+     1: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS stages.c
+     2: 0000000000000000     0 SECTION LOCAL  DEFAULT    1
+     3: 0000000000000000     0 SECTION LOCAL  DEFAULT    3
+     4: 0000000000000000     0 SECTION LOCAL  DEFAULT    4
+     5: 0000000000000000     0 SECTION LOCAL  DEFAULT    5
+     6: 0000000000000000     0 SECTION LOCAL  DEFAULT    7
+     7: 0000000000000000     0 SECTION LOCAL  DEFAULT    8
+     8: 0000000000000000     0 SECTION LOCAL  DEFAULT    9
+     9: 0000000000000000     0 SECTION LOCAL  DEFAULT    6
+    10: 0000000000000000    23 FUNC    GLOBAL DEFAULT    1 greet
+    11: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND puts
+    12: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND _GLOBAL_OFFSET_TABLE_
+    13: 0000000000000017    40 FUNC    GLOBAL DEFAULT    1 main
+```
+
+* *note the following:*
+  * for relocatables most symbols point to just zeroes
+    * before the linking stage it's unclear where they'll land in memory
+
 ## linker
+
+```sh
+file a.out
+# a.out: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=41087481fb19eebf518ec7ff727fde7395cdc927, for GNU/Linux 3.2.0, not stripped
+```
 
 # instruction set architectures
 
