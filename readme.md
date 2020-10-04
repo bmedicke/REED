@@ -7,6 +7,7 @@
 * [memory](#memory)
   * [virtual memory](#virtual-memory)
   * [memory layout](#memory-layout)
+  * [Bit and Byte order](#bit-and-byte-order)
   * [the stack](#the-stack)
 * [stages of compilation](#stages-of-compilation)
   * [preprocessor](#preprocessor)
@@ -53,6 +54,8 @@
 ## virtual memory
 
 ## memory layout
+
+## Bit and Byte order
 
 ## the stack
 
