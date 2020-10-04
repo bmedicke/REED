@@ -9,6 +9,7 @@
   * [memory layout](#memory-layout)
   * [Bit and Byte order](#bit-and-byte-order)
   * [the stack](#the-stack)
+  * [stack frames](#stack-frames)
 * [stages of compilation](#stages-of-compilation)
   * [preprocessor](#preprocessor)
   * [compiler](#compiler)
@@ -60,6 +61,8 @@
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
 
 ## the stack
+
+## stack frames
 
 # stages of compilation
 
