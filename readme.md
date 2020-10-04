@@ -165,7 +165,7 @@ int main(int argc, char** argv, char** penv)
 * *note the following:*
   * our 15 line program ballooned to 1837 lines (`wc -l stages.i`)
     * all neccessary (uncompiled) code for the following stages  is now contained within
-  * if you grep the file for include or define directives there won't be any (`egrep -i '#include|#define'`)
+  * if you grep the file for include or define directives there won't be any (`egrep '#include|#define' stages.i`)
   * the `greet()` function no longer contains the macros for our strings but the strings themselves
 
 ## compiler
