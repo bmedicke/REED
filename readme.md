@@ -87,7 +87,8 @@ int main(int argc, char** argv, char** envp)
 }
 ```
 
-* *note:* using a `main()` signature with `envp` does not conform to POSIX but is widely supported by Unix-like systems and mentioned as a common alternative in the C standard ([[C11, Annex J.5.1, p. 575]](#sources-and-further-reading))
+* *note the following:*
+  * using a `main()` signature with `envp` does not conform to POSIX but is widely supported by Unix-like systems and mentioned as a common alternative in the C standard ([[C11, Annex J.5.1, p. 575]](#sources-and-further-reading))
 
 
 **run through all stages and save intermediary files**
