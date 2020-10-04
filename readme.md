@@ -322,6 +322,10 @@ The dynamic linker (interpreter) will resolve these at runtime.
 ```sh
 file a.out
 # a.out: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=41087481fb19eebf518ec7ff727fde7395cdc927, for GNU/Linux 3.2.0, not stripped
+
+# let's finally run it:
+./a.out
+# hello, world!
 ```
 
 * *note the following:*
@@ -415,6 +419,42 @@ Symbol table '.symtab' contains 66 entries:
     64: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
     65: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@@GLIBC_2.2
 ```
+
+* *note the following:*
+  * **we have two sybol tables now**
+    * `.dynsym` is used by the dynamic linker
+    * `.symtab` includes the same symbols as `.dynsym` (and more)
+    * **`.symtab` is optional at this point**
+  * the functions we've written ourselves (`main`, `greet`) now have locations/offsets
+  * the `puts` function from before still has no location (dynamically linked)
+
+---
+
+I've mentioned in the notes above that the `.symtab` symbol table is optional. Let's strip it.
+
+**stripped symbol table via `strip -s a.out && readelf --syms a.out`**
+
+```sh
+Symbol table '.dynsym' contains 7 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTab
+     2: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND puts@GLIBC_2.2.5 (2)
+     3: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __libc_start_main@GLIBC_2.2.5 (2)
+     4: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+     5: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+     6: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@GLIBC_2.2.5 (2)
+```
+
+**running a stripped binary works just as well**
+```sh
+./a.out
+# hello, world!
+```
+
+* *note the following:*
+  * while it still runs the same it is much harder to debug now
+  * most binaries you encounter in the wild are stripped
 
 # instruction set architectures
 
