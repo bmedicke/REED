@@ -114,6 +114,10 @@ turn a myriad of countermeasures.
 
 ## memory layout
 
+**process-memory-layout.jpg**
+
+<img src="media/process-memory-layout.jpg" width=500px></img>
+
 ## Bit and Byte order
 
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
