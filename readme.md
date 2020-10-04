@@ -119,7 +119,7 @@ Behind the scenes the OS maps the virtual address space to real memory (or disk 
 This is not visible to the process itself.
 
 After setting up the VAS the interpreter is mapped into the newly created userspace.<br>
-The interpreter's job is it perform the required relocations and start our program
+The interpreter's job is it to perform the required relocations and start our program
 (by jumping to its entry point).
 
 ## memory layout
