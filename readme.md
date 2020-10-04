@@ -119,7 +119,7 @@ tree
 
 In this first stage the preprocessor does the following:
 
-* all included header (`#include`) and source files are (recursively) concatenated in place
+* all included headers (`#include`) and our source file are (recursively) concatenated in place
 * preprocessor macros (`#define`) are expanded
 
 **stages.i** (partial)
