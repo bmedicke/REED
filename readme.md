@@ -116,7 +116,7 @@ TODO source this section
 
 ## memory layout
 
-This section focuses on the specifics for Linux and Linux-like systems with the same design.
+This section assumes an x86_32 Linux with a 1GiB/3GiB Kernel/userspace split.
 
 **process-memory-layout.jpg**
 
