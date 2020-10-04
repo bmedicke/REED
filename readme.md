@@ -126,8 +126,11 @@ This section assumes an x86_32 Linux with a 1GiB/3GiB Kernel/userspace split.
   * high memory addresses are at the top (Intel convention)
   * the stack and heap both grow into free memory
   * the heap grows up
+  * the values of `argc`, `argv` and the environment influence where the stack starts!
   * **the stack grows down!**
     * the more data is on the stack, the lower the last address
+  * `0xFFFFFFFF` to `0xC0000000` is the kernelspace
+  * `0xBFFFFFFF` to `0x00000000` is the userspace
 
 ## Bit and Byte order
 
