@@ -106,6 +106,8 @@ tree
 # └── stages.s
 ```
 
+---
+
 **stages-of-compilation.jpg**
 
 <img src="media/stages-of-compilation.jpg"></img>
