@@ -116,6 +116,8 @@ TODO source this section
 
 ## memory layout
 
+This section focuses on the specifics for Linux and Linux-like systems with the same design.
+
 **process-memory-layout.jpg**
 
 <img src="media/process-memory-layout.jpg" width=500px></img>
