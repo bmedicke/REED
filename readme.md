@@ -118,7 +118,7 @@ aka. ISA
 
 ### x86
 
-See [[inteldev]](#sources-and-further-reading).
+See [[inteldev, vol. 1, ch. 2, p. 1ff]](#sources-and-further-reading).
 
 #### AT&T and Intel syntax
 
