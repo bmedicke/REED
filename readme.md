@@ -56,8 +56,9 @@ Caches (and for that matter cache levels) are ignored.
 
 <img src="media/architecture-von-neumann.jpg" width=500px></img>
 
-* data and instructions are stored in the same memory
-* data and instructions are transported over the same bus
+* *note the following:*
+  * data and instructions are stored in the same memory
+  * data and instructions are transported over the same bus
 
 ## Harvard
 
@@ -65,8 +66,9 @@ Caches (and for that matter cache levels) are ignored.
 
 <img src="media/architecture-harvard.jpg" width=500px></img>
 
-* data memory and instruction memory are separated
-* they travel over separate buses
+* *note the following:*
+  * data memory and instruction memory are separated
+  * they travel over separate buses
 
 # memory
 
