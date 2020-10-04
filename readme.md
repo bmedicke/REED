@@ -50,6 +50,8 @@
 The following two subsections show the minimal, archetypal representation of both architectures.
 Caches (and for that matter cache levels) are ignored.
 
+TODO source this section
+
 
 ## Von Neumann
 
