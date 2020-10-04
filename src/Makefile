@@ -1,4 +1,4 @@
 intermediary:
-	gcc --save-temps stages.c -o stages
+	gcc -masm=intel --save-temps stages.c
 clean:
 	rm stages.[i,o,s] stages.bc stages
