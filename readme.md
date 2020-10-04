@@ -89,6 +89,23 @@ int main(int argc, char** argv, char** envp)
 
 * *note:* using a `main()` signature with `envp` does not conform to POSIX but is widely supported by Unix-like systems and mentioned as a common alternative in the C standard ([[C11, Annex J.5.1, p. 575]](#sources-and-further-reading))
 
+
+**run through all stages and save intermediary files**
+
+```sh
+uname -a
+# Linux ubuntu 5.4.0-48-generic #52-Ubuntu SMP Thu Sep 10 10:58:49 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+gcc -masm=intel --save-temps stages.c
+tree
+# .
+# ├── a.out
+# ├── stages.c
+# ├── stages.i
+# ├── stages.o
+# └── stages.s
+```
+
 **stages-of-compilation.jpg**
 
 <img src="media/stages-of-compilation.jpg"></img>
