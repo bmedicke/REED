@@ -127,6 +127,7 @@ This section assumes an x86_32 Linux with a 1GiB/3GiB Kernel/userspace split.
   * the stack and heap both grow into free memory
   * the heap grows up
   * **the size of `argc`, `argv` and the environment influence where the stack starts!**
+    * potential source of confusion when debugging (environment change results in address offset change)
   * **the stack grows down!**
     * the more data is on the stack, the lower the last address
   * `0xFFFFFFFF` to `0xC0000000` is the kernelspace
