@@ -76,6 +76,12 @@ TODO source this section
 
 ## modern processors
 
+Most modern CPUs use the same memory for data and instructions, like
+in the Von Neumann architecture.
+
+To avoid the von Neumann bottleneck multiple levels of caches are
+added between CPU and memory. (L1-Ln cache)
+
 # memory
 
 ## virtual memory
