@@ -97,6 +97,7 @@ uname -a
 # Linux ubuntu 5.4.0-48-generic #52-Ubuntu SMP Thu Sep 10 10:58:49 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 
 gcc -masm=intel --save-temps stages.c
+
 tree
 # .
 # ├── a.out
