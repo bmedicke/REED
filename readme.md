@@ -116,6 +116,8 @@ TODO source this section
 
 ## memory layout
 
+See [[compsec, p. 350]](#sources-and-further-reading).
+
 This section assumes an x86_32 Linux with a 1GiB/3GiB Kernel/userspace split.
 
 **process-memory-layout.jpg**
