@@ -286,6 +286,18 @@ xxd stages.o | head -n 1 # hex dump.
 
 ---
 
+**trying to execute an object file**
+
+```sh
+chmod +x stages.o
+./stages.o
+# -bash: ./stages.o: cannot execute binary file: Exec format error
+```
+
+That did not work, let's see why:
+
+---
+
 C and other high level languages refer to functions and variables with
 human readable (symbolic) names. This makes it easier for the programmer.
 The CPU on the other hand refers to them directly via memory addresses.
@@ -316,6 +328,7 @@ Symbol table '.symtab' contains 14 entries:
 * *note the following:*
   * for relocatables most symbols point to just zeroes
     * this is because before the linking stage it's unclear where they'll land in memory/the file
+    * we will have to resolve them before we can run our binary
 
 ## linker
 
