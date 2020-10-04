@@ -65,7 +65,14 @@ See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
 
 See [[pracbin, p. 12ff]](#sources-and-further-reading).
 
-Let's go through the stages of compilation step by step. We'll use the following example:
+This section assumes compilation for the x86_64 architecture on Linux.
+
+All intermediary files can be found in the `stages-of-compilation` directory.
+
+---
+
+Let's go through the stages of compilation step by step.
+We'll use the following example:
 
 **stages.c**
 
