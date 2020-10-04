@@ -253,6 +253,7 @@ main:
   * constants and variables have symbolic names and not just addresses (`.LC0` for the hello world string)
   * functions are easily identified by their labels (`greet:`, `main:`)
   * calls to functions happen via names and not addresses (`call puts@PLT`)
+  * our call to `printf` was optimized to `puts`
 
 ## assembler
 
