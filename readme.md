@@ -274,6 +274,7 @@ xxd stages.o | head -n 1 # hex dump.
     * `relocatable` since object files don't have a fixed address in memory
     * `not stripped` means that debug symbols are present
   * **each object files is compiled on its own and thus has no idea of memory addresses of other object files**
+  * ELF files start with a bit of *magic*: `0x7F` and then the ASCII characters `E`, `L`, `F`
 
 ## linker
 
