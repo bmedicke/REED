@@ -307,7 +307,7 @@ Symbol table '.symtab' contains 14 entries:
 
 * *note the following:*
   * for relocatables most symbols point to just zeroes
-    * this is because before the linking stage it's unclear where they'll land in memory
+    * this is because before the linking stage it's unclear where they'll land in memory/the file
 
 ## linker
 
