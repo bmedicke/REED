@@ -256,6 +256,25 @@ main:
 
 ## assembler
 
+Now we create a binary file for the first time. But while this object file contains machine code it is not quite executable just yet.
+
+```sh
+file stages.o
+# stages.o: ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), not stripped
+
+xxd stages.o | head -n 1 # hex dump.
+# 00000000: 7f45 4c46 0201 0100 0000 0000 0000 0000  .ELF............
+```
+
+* *note the following:*
+  * the file utility tells us a couple of interesting things:
+    * `ELF` stands for Executable and Linkable Format, a file format for executables and object files (among others)
+    * `64-bit` since our object file is targeted at x86_64
+    * `LSB` stands for Least Significant Byte first (when storing integers)
+    * `relocatable` since object files don't have a fixed address in memory
+    * `not stripped` means that debug symbols are present
+  * **each object files is compiled on its own and thus has no idea of memory addresses of other object files**
+
 ## linker
 
 # instruction set architectures
