@@ -326,7 +326,7 @@ file a.out
 
 * *note the following:*
   * `pie` Position Independent Executable, code does not rely on being located in a specific place in memory
-    * you can ignore this for now, well talk about it later
+    * you can ignore this for now, we'll talk about it later
   * `executable` instead of `relocatable`, which means we can actually run it
   * `dynamically linked` at least some of the used libraries are shared ones
   * `interpreter [...]` which dynamic linker will be used to resolve shared libraries
