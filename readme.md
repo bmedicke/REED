@@ -57,6 +57,8 @@
 
 ## Bit and Byte order
 
+See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
+
 ## the stack
 
 # stages of compilation
