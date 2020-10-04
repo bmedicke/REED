@@ -13,7 +13,7 @@ notes about reverse engineering and exploit development
   * [modern processors](#modern-processors)
     * [consequences](#consequences)
 * [memory](#memory)
-  * [virtual memory](#virtual-memory)
+  * [virtual address space](#virtual-address-space)
   * [memory layout](#memory-layout)
   * [Bit and Byte order](#bit-and-byte-order)
   * [the stack](#the-stack)
@@ -110,7 +110,9 @@ turn a myriad of countermeasures.
 
 # memory
 
-## virtual memory
+## virtual address space
+
+See [[pracbin, p. 27ff]](#sources-and-further-reading).
 
 ## memory layout
 
