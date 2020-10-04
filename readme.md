@@ -72,7 +72,7 @@ the base for the most common CPU designs.
 <img src="media/architecture-von-neumann.jpg" width=500px></img>
 
 * *note the following:*
-  * data and instructions are stored in the same memory
+  * **data and instructions are stored in the same memory**
   * data and instructions are transported over the same bus
 
 ## Harvard
