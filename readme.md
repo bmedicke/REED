@@ -1,4 +1,5 @@
-# basics
+# RE🌾ED
+
 <!-- vim-markdown-toc GFM -->
 
 * [computer architectures](#computer-architectures)
