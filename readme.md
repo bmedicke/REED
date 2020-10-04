@@ -83,9 +83,15 @@ TODO source this section
 
 Most modern CPUs use the same memory for data and instructions, like
 in the Von Neumann architecture.
+To avoid the Von Neumann bottleneck multiple levels of caches are
+added between CPU and memory (L1-Ln cache) and a seperate cache
+for instructions and data ist used in the lowest level (similar to
+the Harvard architecture). 
+The resulting architecture is called **Modified Harvard** or
+to be more specific split-cache/almost Von Neumann architecture.
 
-To avoid the von Neumann bottleneck multiple levels of caches are
-added between CPU and memory. (L1-Ln cache)
+*As such modern CPUs are situated somewhere between a pure Von Neumann and a
+pure Harvard architecture.*
 
 # memory
 
