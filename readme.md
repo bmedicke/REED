@@ -445,7 +445,7 @@ Symbol table '.symtab' contains 66 entries:
   * **we have two sybol tables now**
     * `.dynsym` is used by the dynamic linker
     * `.symtab` includes the same symbols as `.dynsym` (and more)
-    * **`.symtab` is optional at this point**
+    * **`.symtab` is optional at this point** (not necessary for process creation)
   * the functions we've written ourselves (`main`, `greet`) now have locations/offsets
   * the `puts` function from before still has no location (dynamically linked)
 
