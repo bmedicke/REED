@@ -114,6 +114,14 @@ turn a myriad of countermeasures.
 
 See [[pracbin, p. 27ff]](#sources-and-further-reading).
 
+Modern operating systems create a virtual address space for each process.
+Behind the scenes the OS maps the virtual address space to real memory (or disk space).
+This is not visible to the process itself.
+
+After setting up the VAS the interpreter is mapped into the newly created userspace.<br>
+The interpreter's job is it perform the required relocations and start our program
+(by jumping to its entry point).
+
 ## memory layout
 
 See [[compsec, p. 350]](#sources-and-further-reading).
