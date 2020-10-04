@@ -258,9 +258,11 @@ main:
 * *note the following:*
   * if not told otherwise (with `-masm=intel`) gcc creates assembly with AT&T syntax
   * constants and variables have symbolic names and not just addresses (`.LC0` for the hello world string)
+  * constants and variables have types
   * functions are easily identified by their labels (`greet:`, `main:`)
   * calls to functions happen via names and not addresses (`call puts@PLT`)
   * our call to `printf` was optimized to `puts`
+  * there's not much left of the 1.8k lines from the preprocessor step
 
 ## assembler
 
@@ -282,7 +284,7 @@ xxd stages.o | head -n 1 # hex dump.
     * `relocatable` since object files don't have a fixed address in memory
     * `not stripped` means that debug symbols are present
   * **each object files is compiled on its own and thus has no idea of memory addresses of other object files**
-  * ELF files start with a bit of *magic*: `0x7F` and then the ASCII characters `E`, `L`, `F`
+  * ELF files start with a bit of *magic*, the bytes: `0x7F` and then the ASCII characters `E`, `L`, `F`
 
 ---
 
