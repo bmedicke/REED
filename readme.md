@@ -117,6 +117,54 @@ tree
 
 ## preprocessor
 
+In this first stage the preprocessor does the following:
+
+* all included header (`#include`) and source files are (recursively) concatenated in place
+* preprocessor macros (`#define`) are expanded
+
+**stages.i** (partial)
+```c
+# 1 "stages.c"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 31 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+
+/* ... */
+
+typedef signed char __int8_t;
+typedef unsigned char __uint8_t;
+
+/* ... */
+
+extern FILE *stdin;
+extern FILE *stdout;
+extern FILE *stderr;
+
+/* ... */
+
+# 7 "stages.c"
+void greet() {
+  printf("%s", "hello, world!\n");
+}
+
+int main(int argc, char** argv, char** penv)
+{
+  greet();
+  return 
+# 14 "stages.c" 3 4
+        0
+# 14 "stages.c"
+                    ;
+}
+```
+
+* *note the following:*
+  * our 15 line program ballooned to 1837 lines (`wc -l stages.i`)
+    * all neccessary (uncompiled) code for the following stages  is now contained within
+  * if you grep the file for include or define directives there won't be any (`egrep -i '#include|#define'`)
+  * the `greet()` function no longer contains the macros for our strings but the strings themselves
+
 ## compiler
 
 ## assembler
