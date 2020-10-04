@@ -311,9 +311,109 @@ Symbol table '.symtab' contains 14 entries:
 
 ## linker
 
+In this stage all object files will be linked together. The result is a single executable. The process is as follows:
+
+1. merge all object files into a single executable
+2. resolve (static) symbolic references to now known fixed locations
+
+Static libraries (`.a`) are merged into the executable. Dynamic/shared libraries (`.so`) are left unresolved.
+The dynamic linker (interpreter) will resolve these at runtime.
+
 ```sh
 file a.out
 # a.out: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=41087481fb19eebf518ec7ff727fde7395cdc927, for GNU/Linux 3.2.0, not stripped
+```
+
+* *note the following:*
+  * `pie` Position Independent Executable, code does not rely on being located in a specific place in memory
+    * you can ignore this for now, well talk about it later
+  * `executable` instead of `relocatable`, which means we can actually run it
+  * `dynamically linked` at least some of the used libraries are shared ones
+  * `interpreter [...]` which dynamic linker will be used to resolve shared libraries
+
+---
+
+**symbol table via `readelf --syms a.out`**
+
+```sh
+Symbol table '.dynsym' contains 7 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTab
+     2: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND puts@GLIBC_2.2.5 (2)
+     3: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __libc_start_main@GLIBC_2.2.5 (2)
+     4: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+     5: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+     6: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@GLIBC_2.2.5 (2)
+
+Symbol table '.symtab' contains 66 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000000318     0 SECTION LOCAL  DEFAULT    1 
+     2: 0000000000000338     0 SECTION LOCAL  DEFAULT    2 
+     3: 0000000000000358     0 SECTION LOCAL  DEFAULT    3 
+     4: 000000000000037c     0 SECTION LOCAL  DEFAULT    4 
+     5: 00000000000003a0     0 SECTION LOCAL  DEFAULT    5 
+     6: 00000000000003c8     0 SECTION LOCAL  DEFAULT    6 
+     7: 0000000000000470     0 SECTION LOCAL  DEFAULT    7 
+     8: 00000000000004f2     0 SECTION LOCAL  DEFAULT    8 
+     9: 0000000000000500     0 SECTION LOCAL  DEFAULT    9 
+    10: 0000000000000520     0 SECTION LOCAL  DEFAULT   10 
+    11: 00000000000005e0     0 SECTION LOCAL  DEFAULT   11 
+    12: 0000000000001000     0 SECTION LOCAL  DEFAULT   12 
+    13: 0000000000001020     0 SECTION LOCAL  DEFAULT   13 
+    14: 0000000000001040     0 SECTION LOCAL  DEFAULT   14 
+    15: 0000000000001050     0 SECTION LOCAL  DEFAULT   15 
+    16: 0000000000001060     0 SECTION LOCAL  DEFAULT   16 
+    17: 0000000000001208     0 SECTION LOCAL  DEFAULT   17 
+    18: 0000000000002000     0 SECTION LOCAL  DEFAULT   18 
+    19: 0000000000002014     0 SECTION LOCAL  DEFAULT   19 
+    20: 0000000000002060     0 SECTION LOCAL  DEFAULT   20 
+    21: 0000000000003db8     0 SECTION LOCAL  DEFAULT   21 
+    22: 0000000000003dc0     0 SECTION LOCAL  DEFAULT   22 
+    23: 0000000000003dc8     0 SECTION LOCAL  DEFAULT   23 
+    24: 0000000000003fb8     0 SECTION LOCAL  DEFAULT   24 
+    25: 0000000000004000     0 SECTION LOCAL  DEFAULT   25 
+    26: 0000000000004010     0 SECTION LOCAL  DEFAULT   26 
+    27: 0000000000000000     0 SECTION LOCAL  DEFAULT   27 
+    28: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS crtstuff.c
+    29: 0000000000001090     0 FUNC    LOCAL  DEFAULT   16 deregister_tm_clones
+    30: 00000000000010c0     0 FUNC    LOCAL  DEFAULT   16 register_tm_clones
+    31: 0000000000001100     0 FUNC    LOCAL  DEFAULT   16 __do_global_dtors_aux
+    32: 0000000000004010     1 OBJECT  LOCAL  DEFAULT   26 completed.8059
+    33: 0000000000003dc0     0 OBJECT  LOCAL  DEFAULT   22 __do_global_dtors_aux_fin
+    34: 0000000000001140     0 FUNC    LOCAL  DEFAULT   16 frame_dummy
+    35: 0000000000003db8     0 OBJECT  LOCAL  DEFAULT   21 __frame_dummy_init_array_
+    36: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS stages.c
+    37: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS crtstuff.c
+    38: 0000000000002184     0 OBJECT  LOCAL  DEFAULT   20 __FRAME_END__
+    39: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS 
+    40: 0000000000003dc0     0 NOTYPE  LOCAL  DEFAULT   21 __init_array_end
+    41: 0000000000003dc8     0 OBJECT  LOCAL  DEFAULT   23 _DYNAMIC
+    42: 0000000000003db8     0 NOTYPE  LOCAL  DEFAULT   21 __init_array_start
+    43: 0000000000002014     0 NOTYPE  LOCAL  DEFAULT   19 __GNU_EH_FRAME_HDR
+    44: 0000000000003fb8     0 OBJECT  LOCAL  DEFAULT   24 _GLOBAL_OFFSET_TABLE_
+    45: 0000000000001000     0 FUNC    LOCAL  DEFAULT   12 _init
+    46: 0000000000001200     5 FUNC    GLOBAL DEFAULT   16 __libc_csu_fini
+    47: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTab
+    48: 0000000000004000     0 NOTYPE  WEAK   DEFAULT   25 data_start
+    49: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND puts@@GLIBC_2.2.5
+    50: 0000000000004010     0 NOTYPE  GLOBAL DEFAULT   25 _edata
+    51: 0000000000001208     0 FUNC    GLOBAL HIDDEN    17 _fini
+    52: 0000000000000000     0 FUNC    GLOBAL DEFAULT  UND __libc_start_main@@GLIBC_
+    53: 0000000000001149    23 FUNC    GLOBAL DEFAULT   16 greet
+    54: 0000000000004000     0 NOTYPE  GLOBAL DEFAULT   25 __data_start
+    55: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+    56: 0000000000004008     0 OBJECT  GLOBAL HIDDEN    25 __dso_handle
+    57: 0000000000002000     4 OBJECT  GLOBAL DEFAULT   18 _IO_stdin_used
+    58: 0000000000001190   101 FUNC    GLOBAL DEFAULT   16 __libc_csu_init
+    59: 0000000000004018     0 NOTYPE  GLOBAL DEFAULT   26 _end
+    60: 0000000000001060    47 FUNC    GLOBAL DEFAULT   16 _start
+    61: 0000000000004010     0 NOTYPE  GLOBAL DEFAULT   26 __bss_start
+    62: 0000000000001160    40 FUNC    GLOBAL DEFAULT   16 main
+    63: 0000000000004010     0 OBJECT  GLOBAL HIDDEN    25 __TMC_END__
+    64: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+    65: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@@GLIBC_2.2
 ```
 
 # instruction set architectures
