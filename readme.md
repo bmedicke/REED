@@ -120,6 +120,13 @@ TODO source this section
 
 <img src="media/process-memory-layout.jpg" width=500px></img>
 
+* *note the following:*
+  * high memory addresses are at the top (Intel convention)
+  * the stack and heap both grow into free memory
+  * the heap grows up
+  * **the stack grows down!**
+    * the more data is on the stack, the lower the last address
+
 ## Bit and Byte order
 
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
