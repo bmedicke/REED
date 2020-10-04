@@ -46,9 +46,27 @@
 
 # computer architectures
 
+The following two subsections show the minimal, archetypal representation of both architectures.
+Caches (and for that matter cache levels) are ignored.
+
+
 ## Von Neumann
 
+**architecture-von-neumann.jpg**
+
+<img src="media/architecture-von-neumann.jpg" width=500px></img>
+
+* data and instructions are stored in the same memory
+* data and instructions are transported over the same bus
+
 ## Harvard
+
+**architecture-harvard.jpg**
+
+<img src="media/architecture-harvard.jpg" width=500px></img>
+
+* data memory and instruction memory are separated
+* they travel over separate buses
 
 # memory
 
