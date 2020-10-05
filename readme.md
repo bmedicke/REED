@@ -186,13 +186,13 @@ run "passed_along_argument"
 <img src="media/stack-dump-main.jpg"></img>
 
 * *note the following:*
-* as we go further down the stack memory addresses go down as well
-* the lower the data on the screen, the later it was pushed to the stack
-* (a.) shows part of the environment, such as which shell we've used or the default editor
-* (b.) is the argument we started our program with (`argv[1]`)
-* (c.) is the name of the executable (`argv[0]`)
-* (d.) contains the latest return addresses
-  * `__libc_start_main + 243` is the operation that will be executed once we return from `main()`
+  * as we go further down the stack memory addresses go down as well
+  * the lower the data on the screen, the later it was pushed to the stack
+  * (a.) shows part of the environment, such as which shell we've used or the default editor
+  * (b.) is the argument we started our program with (`argv[1]`)
+  * (c.) is the name of the executable (`argv[0]`)
+  * (d.) contains the latest return addresses
+    * `__libc_start_main + 243` is the operation that will be executed once we return from `main()`
 
 ## stack frames
 
