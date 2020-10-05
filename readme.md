@@ -148,8 +148,27 @@ This section assumes an x86_32 Linux with a 1GiB/3GiB Kernel/userspace split.
 
 ## the stack
 
-See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
+A stacks is a dynamic LIFO (last in, first out) data structure that can be interacted with in two ways:
 
+* **push**: add one item to the end
+* **pop**: remove the last item from the end (and put it somewhere)
+
+"The" stack often refers to a specific instance of that data structure also known as the hardware stack.
+Hardware stacks typically grow down which is counterintuitive to the name.
+
+You can think of it as a stack of magnets on the ceiling:
+
+<img src="media/the-stack-push-pop.jpg"></img>
+
+* *note the following:*
+  * at the start the stack is empty (1.)
+  * after we have pushed `variable a` the stack contains a single item (2.)
+  * after we have pushed `variable b` the stack contain two items (3.)
+    * at this point we have lost direct access to `variable a`
+    * to access `variable a` we first have to pop `variable b`
+  * the first pop returns `variable b` to us and removes it from the stack (4.)
+  * the second pop returns `variable a`, the stack is now empty again (5.)
+  * **we don't get to chose which item to pop, it's always the last one added!**
 
 ## stack frames
 
