@@ -15,9 +15,9 @@ notes about reverse engineering and exploit development
 * [memory](#memory)
   * [virtual address space](#virtual-address-space)
   * [memory layout](#memory-layout)
-  * [Bit and Byte order](#bit-and-byte-order)
   * [the stack](#the-stack)
   * [stack frames](#stack-frames)
+  * [Bit and Byte order](#bit-and-byte-order)
 * [stages of compilation](#stages-of-compilation)
   * [preprocessor](#preprocessor)
   * [compiler](#compiler)
@@ -144,13 +144,16 @@ This section assumes an x86_32 Linux with a 1GiB/3GiB Kernel/userspace split.
   * `0xFFFFFFFF` to `0xC0000000` is the kernelspace
   * `0xBFFFFFFF` to `0x00000000` is the userspace
 
-## Bit and Byte order
+## the stack
 
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
 
-## the stack
 
 ## stack frames
+
+## Bit and Byte order
+
+See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
 
 # stages of compilation
 
