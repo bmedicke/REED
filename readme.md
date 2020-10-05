@@ -297,6 +297,8 @@ grows during the course of the program.
 
 ---
 
+If we take one more `stepi` we'll be the farthest away from the top we've ever been!
+
 > stack-frame-main-function-prologue-b.jpg
 
 <img src="media/stack-frame-main-function-prologue-b.jpg"></img>
