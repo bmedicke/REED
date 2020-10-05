@@ -250,6 +250,11 @@ disas main # disassemble main function.
    0x0000555555555186 <+38>:	leave  
    0x0000555555555187 <+39>:	ret    
 ```
+
+* *note the following:*
+  * `=>` marks the instruction, that will be **executed next**
+  * `<+n>` shows the offset of an instruction from the start of the function
+    * in our case `main+28` would be the call instruction
 ## Bit and Byte order
 
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
