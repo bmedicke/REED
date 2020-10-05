@@ -304,7 +304,9 @@ If we take one more `stepi` we'll be the farthest away from the top we've ever b
 <img src="media/stack-frame-main-function-prologue-b.jpg"></img>
 
 * *note the following:*
-  * 
+  * (3.) after executing `sub rsp,0x20` the stack pointer is updated and the stack grows by 32 Byte
+    * we are substracting from the stack pointer because the stack grows down: `0xC0 - 0x20 == 0xA0`
+    * the memory is not initialized in any way, whatever was there before still is
 
 ---
 
