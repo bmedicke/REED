@@ -255,6 +255,22 @@ disas main # disassemble main function.
   * `=>` marks the instruction, that will be **executed next**
   * `<+n>` shows the offset of an instruction from the start of the function
     * in our case `main+28` would be the call instruction
+
+---
+
+The following images show the stack before we have executed any instructions (in maim):
+
+> stack-frame-main-0.jpg
+
+<img src="media/stack-frame-main-0.jpg"></img>
+
+  *note the following:*
+  * the base pointer (`rbp`) points to `0x0`
+  * the stack pointer (`rsp`) points to the end of the previous frame
+  * the most recently pushed item is a return address
+    * it points to an instruction that is part of the C standard library
+    * when `main()` exits, the program will continue from here
+
 ## Bit and Byte order
 
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
