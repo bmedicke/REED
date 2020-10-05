@@ -194,6 +194,7 @@ run "passed_along_argument"
   * (b.) is the argument we started our program with (`argv[1]`)
   * (c.) is the name of the executable (`argv[0]`)
     * **arrays grow up: `argv[0]` is further down the stack than `argv[1]`!**
+  * just after (c.) we can see `argc` is 2 (the size of our `argv` array)
   * (d.) contains the latest return addresses
     * **`__libc_start_main + 243` is the operation that will be executed once we return from `main()`**
 
