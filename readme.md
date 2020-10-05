@@ -182,8 +182,10 @@ Let's take a look at what is specifically stored on the stack.
 
 ## the stack at <main+0>
 
+This section assumes an x86_64 Linux.
 The following shows a partial dump of the stack at the start of `main()`:
 
+> preparing for the stack dump:
 ```sh
 # we will use the executable from the later 'stages of compilation' section.
 # at this point it does not particularly matter though:
@@ -211,6 +213,43 @@ run "passed_along_argument"
 
 ## stack frames
 
+The stack frame for the current function is the part of the stack
+that is used to store local variables for the current function scope.
+
+If a function calls another function a new stack frame is created.<br>
+As functions return to their calling function, stack frames are removed
+and the stack shrinks again.
+
+In this section we will take a look at how this happens one assembly instruction at a time.
+
+> preparing for stepping through the creation of a stack frame:
+
+```sh
+# we will use the 'stages of compilation' binary again.
+# compared to the previous example we don't pass any arguments. this will
+# result in different addresses, even if everything else stays the same.
+gdb a.out
+
+# (gdb)
+start # shortcut for `break main*` plus `run`
+disas main # disassemble main function.
+```
+
+> dissassembled main via `(gdb) disas main`:
+```sh
+=> 0x0000555555555160 <+0>:	endbr64 
+   0x0000555555555164 <+4>:	push   rbp
+   0x0000555555555165 <+5>:	mov    rbp,rsp
+   0x0000555555555168 <+8>:	sub    rsp,0x20
+   0x000055555555516c <+12>:	mov    DWORD PTR [rbp-0x4],edi
+   0x000055555555516f <+15>:	mov    QWORD PTR [rbp-0x10],rsi
+   0x0000555555555173 <+19>:	mov    QWORD PTR [rbp-0x18],rdx
+   0x0000555555555177 <+23>:	mov    eax,0x0
+   0x000055555555517c <+28>:	call   0x555555555149 <greet>
+   0x0000555555555181 <+33>:	mov    eax,0x0
+   0x0000555555555186 <+38>:	leave  
+   0x0000555555555187 <+39>:	ret    
+```
 ## Bit and Byte order
 
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
