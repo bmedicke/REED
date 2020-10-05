@@ -319,6 +319,9 @@ Let's skip ahead to `main+28`, the function call.
 
 <img src="media/stack-frame-main-greet.jpg"></img>
 
+* *note the following:*
+  * (4.) as part of executing `call 0x555555555149`, the address for `main+33` is pushed to the stack
+    * **this is the return address for the instruction that is next in line after we return from `greet()`**
 ## Bit and Byte order
 
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
