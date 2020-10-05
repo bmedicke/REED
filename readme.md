@@ -165,8 +165,8 @@ You can think of it as a stack of magnets on the ceiling:
   * at the start the stack is empty (1.)
   * after we have pushed `variable a` the stack contains a single item (2.)
   * after we have pushed `variable b` the stack contain two items (3.)
-    * at this point we have lost direct access to `variable a`
-    * to access `variable a` we first have to pop `variable b`
+    * at this point we have lost direct access to `variable a` (at least to pop it)
+    * to pop `variable a` we first have to pop `variable b`
   * the first pop returns `variable b` to us and removes it from the stack (4.)
   * the second pop returns `variable a`, the stack is now empty again (5.)
   * **we don't get to chose which item to pop, it's always the last one added!**
