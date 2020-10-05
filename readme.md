@@ -271,6 +271,21 @@ The following images show the stack before we have executed any instructions (in
     * it points to an instruction that is part of the C standard library
     * when `main()` exits, the program will continue from here
 
+---
+
+Now we repeatedly call `stepi` and see how the stack
+grows during the course of the program.
+
+> stack-frame-main-function-prolog-a.jpg
+
+<img src="media/stack-frame-main-function-prolog-a.jpg"></img>
+
+* *note the following:*
+  * after executing `push rbp` the stack grows by one word
+    * a word is traditionally the smallest addressable size of memory
+    * 1 word = 8 Byte = 64 bit (we're running on x86_**64** after all)
+  * at the same time the stack pointer is updated to point to the new end of our frame
+
 ## Bit and Byte order
 
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
