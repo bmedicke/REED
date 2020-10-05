@@ -288,10 +288,12 @@ grows during the course of the program.
 <img src="media/stack-frame-main-function-prologue-a.jpg"></img>
 
 * *note the following:*
-  * after executing `push rbp` the stack grows by one word
+  * (1.) after executing `push rbp` the stack grows by one word
     * a word is traditionally the smallest addressable size of memory
     * 1 word = 8 Byte = 64 bit (we're running on x86_**64** after all)
-  * at the same time the stack pointer is updated to point to the new end of our frame
+    * we do this so we can restore the old base pointer
+  * (1.) at the same time the stack pointer is updated to point to the new end of our frame
+  * (2.) after executing `mov rbp, rsp` both pointers point at the same address (the backup)
 
 ---
 
