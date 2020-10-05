@@ -260,6 +260,7 @@ disas main # disassemble main function.
   * `=>` marks the instruction, that will be **executed next**
   * `<+n>` shows the offset of an instruction from the start of the function
     * in our case `main+28` would be the call instruction
+  * `main+4`, `main+5` and `main+8` are what is called the **function prologue**
 
 ---
 
