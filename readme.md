@@ -146,6 +146,8 @@ This section assumes an x86_32 Linux with a 1GiB/3GiB Kernel/userspace split.
     <br>(environment change results in address offset change)
   * `0xFFFFFFFF` to `0xC0000000` is the kernelspace
   * `0xBFFFFFFF` to `0x00000000` is the userspace
+  * **CPU instructions (`.text`, shared libs and the interpreter)<br>and data (all the other sections) reside in the same memory**
+
 
 ## the stack
 
