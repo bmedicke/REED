@@ -310,6 +310,11 @@ If we take one more `stepi` we'll be the farthest away from the top we've ever b
 
 ---
 
+Instructions `main+12`, `main+15`and `main+19` write data to our new space on the stack frame.
+Instruction `main+23` only touches a register.
+
+Let's skip ahead to `main+28`, the function call.
+
 > stack-frame-main-greet.jpg
 
 <img src="media/stack-frame-main-greet.jpg"></img>
