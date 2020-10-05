@@ -216,7 +216,12 @@ run "passed_along_argument"
 The stack frame for the current function is the part of the stack
 that is used to store local variables for the current function scope.
 
-If a function calls another function a new stack frame is created.<br>
+The stack frame is delimited by two pointers:
+1. The *base pointer*, that points to the start of the stack.
+2. And the *frame pointer* that points to the end of the current frame.
+
+
+If a function calls another function a new stack frame is created and the pointers are updated.<br>
 As functions return to their calling function, stack frames are removed
 and the stack shrinks again.
 
@@ -266,8 +271,9 @@ The following images show the stack before we have executed any instructions (in
 
   *note the following:*
   * the base pointer (`rbp`) points to `0x0`
+    * `rbp` is a general purpose register and might have been used for something else
   * the stack pointer (`rsp`) points to the end of the previous frame
-  * the most recently pushed item is a return address
+  * the most recently pushed item is a **return address**
     * it points to an instruction that is part of the C standard library
     * when `main()` exits, the program will continue from here
 
@@ -276,15 +282,30 @@ The following images show the stack before we have executed any instructions (in
 Now we repeatedly call `stepi` and see how the stack
 grows during the course of the program.
 
-> stack-frame-main-function-prolog-a.jpg
+> stack-frame-main-function-prologue-a.jpg
 
-<img src="media/stack-frame-main-function-prolog-a.jpg"></img>
+<img src="media/stack-frame-main-function-prologue-a.jpg"></img>
 
 * *note the following:*
   * after executing `push rbp` the stack grows by one word
     * a word is traditionally the smallest addressable size of memory
     * 1 word = 8 Byte = 64 bit (we're running on x86_**64** after all)
   * at the same time the stack pointer is updated to point to the new end of our frame
+
+---
+
+> stack-frame-main-function-prologue-b.jpg
+
+<img src="media/stack-frame-main-function-prologue-b.jpg"></img>
+
+* *note the following:*
+  * 
+
+---
+
+> stack-frame-main-greet.jpg
+
+<img src="media/stack-frame-main-greet.jpg"></img>
 
 ## Bit and Byte order
 
