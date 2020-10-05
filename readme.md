@@ -263,7 +263,7 @@ disas main # disassemble main function.
 
 ---
 
-The following images show the stack before we have executed any instructions (in maim):
+The following images show the stack before we have executed any instructions (in main):
 
 > stack-frame-main-0.jpg
 
