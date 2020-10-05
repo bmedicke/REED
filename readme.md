@@ -173,6 +173,11 @@ You can think of it as a stack of magnets on the ceiling:
   * the second pop returns `variable a`, the stack is now empty again (5.)
   * **we don't get to chose which item to pop, it's always the last one added!**
 
+---
+
+Let's take a look at what is specifically stored on the stack.
+
+
 ## the stack at <main+0>
 
 The following shows a partial dump of the stack at the start of `main()`:
@@ -183,6 +188,7 @@ gdb a.out # stages.c
 # (gdb)
 break *main
 run "passed_along_argument"
+# at this point we take a look at the stack.
 ```
 
 <img src="media/stack-dump-main.jpg"></img>
