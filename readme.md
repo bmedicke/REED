@@ -185,7 +185,9 @@ Let's take a look at what is specifically stored on the stack.
 The following shows a partial dump of the stack at the start of `main()`:
 
 ```sh
-gdb a.out # stages.c
+# we will use the executable from the later 'stages of compilation' section.
+# at this point it does not particularly matter though:
+gdb a.out
 
 # (gdb)
 break *main
