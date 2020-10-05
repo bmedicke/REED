@@ -322,6 +322,12 @@ Let's skip ahead to `main+28`, the function call.
 * *note the following:*
   * (4.) as part of executing `call 0x555555555149`, the address for `main+33` is pushed to the stack
     * **this is the return address for the instruction that is next in line after we return from `greet()`**
+
+If we would continue the execution of `greet()` the process would be the same as for `main()`:
+  * backup the base pointer to the stack
+  * move the base and stack pointers to grow the frame
+  * push a return address as we call another function
+
 ## Bit and Byte order
 
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
