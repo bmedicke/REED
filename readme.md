@@ -16,6 +16,7 @@ notes about reverse engineering and exploit development
   * [virtual address space](#virtual-address-space)
   * [memory layout](#memory-layout)
   * [the stack](#the-stack)
+  * [the stack at <main+0>](#the-stack-at-main0)
   * [stack frames](#stack-frames)
   * [Bit and Byte order](#bit-and-byte-order)
 * [stages of compilation](#stages-of-compilation)
@@ -169,6 +170,29 @@ You can think of it as a stack of magnets on the ceiling:
   * the first pop returns `variable b` to us and removes it from the stack (4.)
   * the second pop returns `variable a`, the stack is now empty again (5.)
   * **we don't get to chose which item to pop, it's always the last one added!**
+
+## the stack at <main+0>
+
+The following shows a partial dump of the stack at the start of `main()`:
+
+```sh
+gdb a.out # stages.c
+
+# (gdb)
+break *main
+run "passed_along_argument"
+```
+
+<img src="media/stack-dump-main.jpg"></img>
+
+* *note the following:*
+* as we go further down the stack memory addresses go down as well
+* the lower the data on the screen, the later it was pushed to the stack
+* (a.) shows part of the environment, such as which shell we've used or the default editor
+* (b.) is the argument we started our program with (`argv[1]`)
+* (c.) is the name of the executable (`argv[0]`)
+* (d.) contains the latest return addresses
+  * `__libc_start_main + 243` is the operation that will be executed once we return from `main()`
 
 ## stack frames
 
