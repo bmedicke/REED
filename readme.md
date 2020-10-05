@@ -68,7 +68,7 @@ See [[edvac]](#sources-and-further-reading).
 Somewhat controversially named solely after John von Neumann this is still
 the base for the most common CPU designs.
 
-**architecture-von-neumann.jpg**
+> architecture-von-neumann.jpg
 
 <img src="media/architecture-von-neumann.jpg" width=500px></img>
 
@@ -78,7 +78,7 @@ the base for the most common CPU designs.
 
 ## Harvard
 
-**architecture-harvard.jpg**
+> architecture-harvard.jpg
 
 <img src="media/architecture-harvard.jpg" width=500px></img>
 
@@ -131,7 +131,7 @@ See [[compsec, p. 350]](#sources-and-further-reading).
 
 This section assumes an x86_32 Linux with a 1GiB/3GiB Kernel/userspace split.
 
-**process-memory-layout.jpg**
+> process-memory-layout.jpg
 
 <img src="media/process-memory-layout.jpg" width=500px></img>
 
@@ -160,6 +160,8 @@ A stacks is a dynamic LIFO (last in, first out) data structure that can be inter
 Hardware stacks typically grow down which is counterintuitive to the name.
 
 You can think of it as a stack of magnets on the ceiling:
+
+> the-stack-push-pop.jpg
 
 <img src="media/the-stack-push-pop.jpg"></img>
 
@@ -190,6 +192,7 @@ break *main
 run "passed_along_argument"
 # at this point we take a look at the stack.
 ```
+> stack-dump-main.jpg
 
 <img src="media/stack-dump-main.jpg"></img>
 
@@ -223,7 +226,7 @@ All intermediary files can be found in the `stages-of-compilation` directory.
 Let's go through the stages of compilation step by step.
 We'll use the following example:
 
-**stages.c**
+> stages.c
 
 ```c
 #include <stdio.h>
@@ -247,7 +250,7 @@ int main(int argc, char** argv, char** envp)
   * using a `main()` signature with `envp` does not conform to POSIX but is widely supported by Unix-like systems and mentioned as a common alternative in the C standard ([[c11, Annex J.5.1, p. 575]](#sources-and-further-reading))
 
 
-**run through all stages and save intermediary files**
+> run through all stages and save intermediary files:
 
 ```sh
 uname -a
@@ -266,7 +269,7 @@ tree
 
 ---
 
-**stages-of-compilation.jpg**
+> stages-of-compilation.jpg
 
 <img src="media/stages-of-compilation.jpg"></img>
 
@@ -281,7 +284,8 @@ In this first stage the preprocessor does the following:
 * all included headers (`#include`) and our source file are (recursively) concatenated in place
 * preprocessor macros (`#define`) are expanded
 
-**stages.i** (partial)
+> stages.i (partial)
+
 ```c
 # 1 "stages.c"
 # 1 "<built-in>"
@@ -329,7 +333,7 @@ int main(int argc, char** argv, char** penv)
 In the compilation stage our concatenated source is translated into assembly language.
 Depending on flags more or less optimization takes place (`-O0` to `-O3`).
 
-**stages.s (Intel syntax)**
+> stages.s (Intel syntax)
 
 ```asm
 	.file	"stages.c"
@@ -417,6 +421,8 @@ main:
 
 Now we create a binary file for the first time. But while this object file contains machine code it is not quite executable just yet.
 
+> inspecting the object file:
+
 ```sh
 file stages.o
 # stages.o: ELF 64-bit LSB relocatable, x86-64, version 1 (SYSV), not stripped
@@ -437,7 +443,7 @@ xxd stages.o | head -n 1 # hex dump.
 
 ---
 
-**trying to execute an object file**
+> trying to execute an object file
 
 ```sh
 chmod +x stages.o
@@ -455,7 +461,7 @@ The CPU on the other hand refers to them directly via memory addresses.
 
 A symbol table is a mapping between the two.
 
-**symbol table via `readelf --syms stages.o`**
+> symbol table via `readelf --syms stages.o`
 
 ```sh
 Symbol table '.symtab' contains 14 entries:
@@ -491,6 +497,8 @@ In this stage all object files will be linked together. The result is a single e
 Static libraries (`.a`) are merged into the executable. Dynamic/shared libraries (`.so`) are left unresolved.
 The dynamic linker (interpreter) will resolve these at runtime.
 
+> inspecting the executable:
+
 ```sh
 file a.out
 # a.out: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=41087481fb19eebf518ec7ff727fde7395cdc927, for GNU/Linux 3.2.0, not stripped
@@ -509,7 +517,7 @@ file a.out
 
 ---
 
-**symbol table via `readelf --syms a.out`**
+> symbol table via `readelf --syms a.out`
 
 ```sh
 Symbol table '.dynsym' contains 7 entries:
@@ -604,7 +612,7 @@ Symbol table '.symtab' contains 66 entries:
 
 I've mentioned in the notes above that the `.symtab` symbol table is optional. Let's strip it.
 
-**stripped symbol table via `strip -s a.out && readelf --syms a.out`**
+> stripped symbol table via `strip -s a.out && readelf --syms a.out`:
 
 ```sh
 Symbol table '.dynsym' contains 7 entries:
@@ -618,7 +626,7 @@ Symbol table '.dynsym' contains 7 entries:
      6: 0000000000000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@GLIBC_2.2.5 (2)
 ```
 
-**running a stripped binary works just as well**
+> running a stripped binary works just as well:
 ```sh
 ./a.out
 # hello, world!
