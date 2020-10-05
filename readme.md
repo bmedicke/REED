@@ -98,7 +98,9 @@ The resulting architecture is called Modified Harvard or
 to be more specific split-cache/**almost Von Neumann** architecture.
 
 *As such modern CPUs are situated somewhere between a pure Von Neumann and a
-pure Harvard architecture.*
+pure Harvard architecture.<br>
+The important takeaway here is that data and instructions are stored
+in the same place!*
 
 ### consequences
 
