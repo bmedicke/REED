@@ -121,7 +121,7 @@ See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
 
 > datastructure-byte-order.jpg
 
-<img src="media/datastructure-byte-order.jpg"></img>
+<img src="media/byte-order.jpg"></img>
 
 
 ## virtual address space
