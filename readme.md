@@ -117,6 +117,13 @@ turn a myriad of countermeasures.
 
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
 
+
+
+> datastructure-byte-order.jpg
+
+<img src="media/datastructure-byte-order.jpg"></img>
+
+
 ## virtual address space
 
 See [[pracbin, p. 27ff]](#sources-and-further-reading).
