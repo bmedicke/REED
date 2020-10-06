@@ -136,7 +136,7 @@ This section assumes an x86_32 Linux with a 1GiB/3GiB Kernel/userspace split.
 <img src="media/process-memory-layout.jpg" width=500px></img>
 
 * *note the following:*
-  * high memory addresses are at the top (Intel convention, [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading))
+  * high memory addresses are at the top (Intel notational convention, [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading))
   * the stack and heap both grow into free memory
   * the heap grows up
   * **the stack grows down!**
