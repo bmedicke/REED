@@ -7,8 +7,6 @@ notes about reverse engineering and exploit development
 This readme covers the absolute basics while more technical topics (linked throughout) are covered in seperate files.
 It's a good idea to read and understand this page entirely before delving into the specifics.
 
----
-
 A couple of conventions to make orientation a bit easier:
 
 * links in square brackets refer to on of the sources at the botton, e.g. [[pracbin, p. 27ff]](#sources-and-further-reading)
