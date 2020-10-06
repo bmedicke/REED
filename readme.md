@@ -22,6 +22,7 @@ A couple of conventions to make orientation a bit easier:
   * [modern processors](#modern-processors)
     * [consequences](#consequences)
 * [registers](#registers)
+  * [the instruction pointer](#the-instruction-pointer)
 * [memory](#memory)
   * [Bit and Byte order](#bit-and-byte-order)
   * [virtual address space](#virtual-address-space)
@@ -128,6 +129,12 @@ They store a small amount of data and instructions that the CPU can immediately 
 As such they are much faster than any other form of storage (HDDs, SSDs, RAM, Cache).
 
 Some registers might be read only or have a specific hardware function.
+
+## the instruction pointer
+
+One important special purpose register is the one that stores the instruction pointer or program counter.
+The instruction pointer always points at the instruction that the CPU will execute next. As an internal register
+it is not usually directly read or writeable. (Some architectures such as 32-bit ARM do expose it.)
 
 # memory
 
