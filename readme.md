@@ -21,6 +21,7 @@ A couple of conventions to make orientation a bit easier:
   * [Harvard](#harvard)
   * [modern processors](#modern-processors)
     * [consequences](#consequences)
+* [registers](#registers)
 * [memory](#memory)
   * [Bit and Byte order](#bit-and-byte-order)
   * [virtual address space](#virtual-address-space)
@@ -119,6 +120,14 @@ The - by the Von Neumann architecture - historically caused consolidation of dat
 and instructions (that are executed by the CPU)
 in the same memory has led to countless memory corruption exploits and in
 turn a myriad of countermeasures.
+
+# registers
+
+As seen in the drawings of the Von Neumann and Harvard architectures, registers are part of the CPU.
+They store a small amount of data and instructions that the CPU can immediately operate on.
+As such they are much faster than any other form of storage (HDDs, SSDs, RAM, Cache).
+
+Some registers might be read only or have a specific hardware function.
 
 # memory
 
