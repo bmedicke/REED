@@ -138,6 +138,8 @@ it is not usually directly read or writeable. (Some architectures such as 32-bit
 
 # memory
 
+Memory refers to fast, non persistant storage. Today (main) memory is usually RAM.
+
 ## Bit and Byte order
 
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
