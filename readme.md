@@ -55,6 +55,7 @@ A couple of conventions to make orientation a bit easier:
 * [tools](#tools)
   * [GDB](#gdb)
   * [binutils](#binutils)
+  * [binwalk](#binwalk)
   * [Python 3](#python-3)
   * [Compiler Explorer](#compiler-explorer)
   * [binvis.io](#binvisio)
@@ -902,6 +903,8 @@ Dynamic analysis on the other hand executes the binary.
 ## binutils
 
 See [[binutils ↣]](#sources-and-further-reading).
+
+## binwalk
 
 ## Python 3
 
