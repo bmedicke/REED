@@ -127,7 +127,7 @@ Bits can be stored in two ways:
 <img src="media/bit-order.jpg"></img>
 
 * *note the following:*
-  * both represent the same number (`13` in base 10)
+  * both Byte represent the same number (`13` in base 10)
 
 ---
 
