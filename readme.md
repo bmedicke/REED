@@ -9,7 +9,7 @@ It's a good idea to read and understand this page entirely before delving into t
 
 A couple of conventions to make orientation a bit easier:
 
-* links in square brackets refer to on of the sources at the botton, e.g. [[pracbin, p. 27ff]](#sources-and-further-reading)
+* links in square brackets refer to one of the sources at the botton, e.g. [[pracbin, p. 27ff]](#sources-and-further-reading)
 * links that end with an arrow are in-repo-links, e.g. [exploits ↣](exploits)
 
 # toc
