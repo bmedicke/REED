@@ -152,7 +152,8 @@ Bits can be stored in two ways:
 * least significant bit first
 
 Since the smallest addressable unit is one Byte it usually does not matter.
-(Except when working with bitfields.) That said little endian 
+(Except when working with bitfields or serializing data Bit by Bit via SPI/I2C.)
+That said Bit order usually follows the Byte order of the system.
 
 > bit-order.jpg
 
