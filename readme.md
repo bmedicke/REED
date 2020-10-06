@@ -117,7 +117,17 @@ turn a myriad of countermeasures.
 
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
 
+Bits can be stored in two ways:
 
+* most significant bit first
+* least significant bit first
+
+> bit-order.jpg
+
+<img src="media/bit-order.jpg"></img>
+
+* *note the following:*
+  * both represent the same number (`13` in base 10)
 
 > datastructure-byte-order.jpg
 
