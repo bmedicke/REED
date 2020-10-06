@@ -161,7 +161,7 @@ That said Bit order usually follows the Byte order of the system.
 
 * *note the following:*
   * both Byte represent the same number (`13` in base 10)
-  * **the drawing shows the order the bits would be stored (starting left)**
+  * **the drawing shows the order the bits would be stored in (starting left)**
     * the leftmost bit gets the lowest address
 
 ## virtual address space
