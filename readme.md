@@ -273,6 +273,8 @@ The following images show the stack before we have executed any instructions (in
   *note the following:*
   * the base pointer (`rbp`) points to `0x0`
     * on entry GDB sets all registers (except `rsp` and `rip`) to zero
+      * you can observe this behaviour with `(gdb) starti`
+    * if we had ran the executable without a debugger it would contain a valid address
   * the stack pointer (`rsp`) points to the end of the previous frame
   * the most recently pushed item is a **return address**
     * it points to an instruction that is part of the C standard library
