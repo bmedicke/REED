@@ -129,6 +129,21 @@ Bits can be stored in two ways:
 * *note the following:*
   * both represent the same number (`13` in base 10)
 
+---
+
+There are several ways to store multi-Byte data in memory. Today the two most common are:
+
+* Little Endian (used by x86_32, x86_64)
+* Big Endian (AVR32, z/Architecture)
+
+ARM, IA-64 and PowerPC support both for data and instructions.
+
+Endiannes only comes into play when storing multi-Byte data.
+Big endian stores the most significant Byte first.
+Little endian stores the least significan Byte first.
+
+The big/little refer to the end that is stored first.
+
 > datastructure-byte-order.jpg
 
 <img src="media/byte-order.jpg"></img>
