@@ -2,6 +2,9 @@
 
 notes about reverse engineering and exploit development
 
+---
+
+This readme covers the absolute basics while more technical topics (linked throughout) are covered in seperate files.
 
 # toc
 
