@@ -272,7 +272,7 @@ The following images show the stack before we have executed any instructions (in
 
   *note the following:*
   * the base pointer (`rbp`) points to `0x0`
-    * `rbp` is a general purpose register and might have been used for something else
+    * on entry GDB sets all registers (except `rsp` and `rip`) to zero
   * the stack pointer (`rsp`) points to the end of the previous frame
   * the most recently pushed item is a **return address**
     * it points to an instruction that is part of the C standard library
