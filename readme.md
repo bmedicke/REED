@@ -260,7 +260,7 @@ run "passed_along_argument"
 The stack frame for the current function is the part of the stack
 that is used to store local variables for the current function scope.
 
-The stack frame is delimited by two pointers:
+The current stack frame is delimited by two pointers:
 1. The *base pointer*, that points to the start of the stack frame.
 2. And the *frame pointer* that points to the end of the current frame.
 
