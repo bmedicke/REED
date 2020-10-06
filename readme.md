@@ -138,13 +138,13 @@ it is not usually directly read or writeable. (Some architectures such as 32-bit
 
 # memory
 
-Memory refers to fast, non persistant storage. Today (main) memory is usually RAM.
+Memory refers to fast, non persistant storage. Nowadays, (main) memory is usually RAM.
 
 ## Bit and Byte order
 
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
 
-There are several ways to store multi-Byte data in memory. Today the two most common are:
+There are several ways to store multi-Byte data in memory. Today, the two most common are:
 
 * Little Endian (used by x86_32, x86_64)
 * Big Endian (AVR32, z/Architecture)
