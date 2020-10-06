@@ -14,7 +14,7 @@ A couple of conventions to make orientation a bit easier:
 * links in square brackets refer to on of the sources at the botton, e.g. [[pracbin, p. 27ff]](#sources-and-further-reading)
 * links that end with an arrow are in-repo-links, e.g. [exploits ↣](exploits)
 
----
+# toc
 
 <!-- vim-markdown-toc GFM -->
 
