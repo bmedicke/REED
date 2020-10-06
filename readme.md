@@ -134,6 +134,14 @@ The big/little refer to the end that is stored first.
 
 <img src="media/byte-order.jpg"></img>
 
+* *note the following:*
+  * higher addresses are towards the top
+  * higher addresses are towards the left
+  * each Byte has its own address
+  * the first Byte (Byte 0) is stored first (it gets the lowest address)
+
+---
+
 Bits can be stored in two ways:
 
 * most significant bit first
