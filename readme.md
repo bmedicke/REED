@@ -902,7 +902,7 @@ Dynamic analysis on the other hand executes the binary.
 
 ## binutils
 
-See [[binutils ↣]](#sources-and-further-reading).
+See [[binutils]](#sources-and-further-reading).
 
 ## binwalk
 
