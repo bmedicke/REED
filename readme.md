@@ -13,12 +13,12 @@ notes about reverse engineering and exploit development
   * [modern processors](#modern-processors)
     * [consequences](#consequences)
 * [memory](#memory)
+  * [Bit and Byte order](#bit-and-byte-order)
   * [virtual address space](#virtual-address-space)
   * [memory layout](#memory-layout)
   * [the stack](#the-stack)
   * [the stack at <main+0>](#the-stack-at-main0)
   * [stack frames](#stack-frames)
-  * [Bit and Byte order](#bit-and-byte-order)
 * [stages of compilation](#stages-of-compilation)
   * [preprocessor](#preprocessor)
   * [compiler](#compiler)
@@ -112,6 +112,10 @@ in the same memory has led to countless memory corruption exploits and in
 turn a myriad of countermeasures.
 
 # memory
+
+## Bit and Byte order
+
+See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
 
 ## virtual address space
 
@@ -330,10 +334,6 @@ If we would continue the execution of `greet()` the process would be the same as
   * backup the base pointer to the stack
   * move the base and stack pointers to grow the frame
   * push a return address as we call another function
-
-## Bit and Byte order
-
-See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
 
 # stages of compilation
 
