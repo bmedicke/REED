@@ -117,20 +117,6 @@ turn a myriad of countermeasures.
 
 See [[inteldev, vol. 1, ch. 1, p. 5f]](#sources-and-further-reading).
 
-Bits can be stored in two ways:
-
-* most significant bit first
-* least significant bit first
-
-> bit-order.jpg
-
-<img src="media/bit-order.jpg"></img>
-
-* *note the following:*
-  * both Byte represent the same number (`13` in base 10)
-
----
-
 There are several ways to store multi-Byte data in memory. Today the two most common are:
 
 * Little Endian (used by x86_32, x86_64)
@@ -148,6 +134,20 @@ The big/little refer to the end that is stored first.
 
 <img src="media/byte-order.jpg"></img>
 
+Bits can be stored in two ways:
+
+* most significant bit first
+* least significant bit first
+
+Since the smallest addressable unit is one Byte it usually does not matter.
+(Except when working with bitfields.) That said little endian 
+
+> bit-order.jpg
+
+<img src="media/bit-order.jpg"></img>
+
+* *note the following:*
+  * both Byte represent the same number (`13` in base 10)
 
 ## virtual address space
 
