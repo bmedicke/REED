@@ -879,11 +879,11 @@ Dynamic analysis on the other hand executes the binary.
 
 ## GDB
 
-[GDB](gdb)
+[GDB ↣](gdb)
 
 ## binutils
 
-See [[binutils]](#sources-and-further-reading).
+See [[binutils ↣]](#sources-and-further-reading).
 
 ## Python 3
 
@@ -899,11 +899,11 @@ See [[binutils]](#sources-and-further-reading).
 
 ## dotfiles
 
-[dotfiles](dotfiles)
+[dotfiles ↣](dotfiles)
 
 # exploits
 
-[exploits](exploits)
+[exploits ↣](exploits)
 
 # sources and further reading
 
