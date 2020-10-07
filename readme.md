@@ -61,6 +61,7 @@ A couple of conventions to make orientation a bit easier:
   * [binvis.io](#binvisio)
   * [dotfiles](#dotfiles)
 * [exploits](#exploits)
+* [reverse-engineering](#reverse-engineering)
 * [sources and further reading](#sources-and-further-reading)
 
 <!-- vim-markdown-toc -->
@@ -925,6 +926,11 @@ See [[binutils]](#sources-and-further-reading).
 # exploits
 
 [exploits ↣](exploits)
+
+
+# reverse-engineering
+
+[reverse engineering ↣](reverse-engineering)
 
 # sources and further reading
 
