@@ -843,7 +843,7 @@ aka. ISA
 
 ### x86
 
-See [[inteldev, vol. 1, ch. 2, p. 1ff]](#sources-and-further-reading).
+See [[inteldev, vol. 1, ch. 2, p. 1ff]](#sources-and-further-reading), [[86hist]](#sources-and-further-reading).
 
 #### AT&T and Intel syntax
 
@@ -928,6 +928,7 @@ See [[binutils]](#sources-and-further-reading).
 
 # sources and further reading
 
+* [86hist] Morse, S. P., Ravenel, B. W., Mazor, S., & Pohlman, W. B. (1980). Intel Microprocessors — 8008 to 8086. Computer, 13(10), 42–60. https://doi.org/10.1109/MC.1980.1653375
 * [binutils] GNU Binary Utilities Documentation. (2002). Retrieved from http://www.gnu.org/software/binutils/manual/
 * [c11] ISO, & IEC. (2010). ISO/IEC 9899:201x, International Standard Programming languages — C, Committee Draft (N1570 ed.). ISO/IEC. Retrieved from http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
 * [compsec] Stallings, W. (2018). Computer Security: Principles and Practice, Global Edition (4th ed.). Pearson.
