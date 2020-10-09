@@ -34,6 +34,20 @@ Both plugins are highly customizable.
 
 * [github.com/snare/voltron](https://github.com/snare/voltron)
 
+Provides "views" into certain aspects of the debugger (not just GDB). My favorite two are:
+
+* Registers
+* The Stack
+
+Changes since the last instruction are color coded and you can quickly scroll through the stack.<br>
+Voltron views can be displayed in any TTY but they really shine when you use them in tmux (or screen).
+
+Here's an example from the main readme:
+
+> stack-dump-main.jpg
+
+<img src="../media/stack-dump-main.jpg"></img>
+
 ### GEF
 
 **GDB Enhanced Features**
