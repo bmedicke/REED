@@ -24,6 +24,12 @@ alias gdb="gdb -q"
 
 ## plugins
 
+GDB on its own is great, if not very pretty and user-friendly for novices.
+The following are two plugins that extend its functionality while
+adding a couple of very useful features that will make your life easier.
+
+Both plugins are highly customizable.
+
 ### Voltron
 
 * [github.com/snare/voltron](https://github.com/snare/voltron)
