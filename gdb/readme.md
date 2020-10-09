@@ -12,6 +12,16 @@ set disassembly-flavor intel
 It uses the same syntax as the `set` command inside GDB.<br>
 For a full list of settings and explanations run `help set` in GDB.
 
+---
+
+Unfortunately there's no option to remove the wall of text when starting up GDB.<br>
+You can create an alias to achieve the same though:
+
+```sh
+# .bashrc, .zshrc or similar.
+alias gdb="gdb -q"
+```
+
 ## plugins
 
 ### Voltron
