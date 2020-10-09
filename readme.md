@@ -233,12 +233,12 @@ It can be primarily interacted with in two ways:
 * **push**: add one item to the end
 * **pop**: remove the last item from the end (and put it somewhere)
 
-"The" stack often refers to a specific instance of that data structure also known as the hardware stack.
-Hardware stacks typically grow down which is counterintuitive to the name.<br>
+"The" stack often refers to a specific instance of that data structure also known as the hardware stack.<br>
 Depending on the language used, its function is to provide a temporary space
 for local variables in the current scope, passing parameters between calls,
 storing return addresses and more.
 
+**Hardware stacks typically grow down which is counterintuitive to the name.**
 
 You can think of it as a stack of magnets on the ceiling:
 
