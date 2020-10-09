@@ -55,5 +55,13 @@ Here's an example from the main readme:
 * [github.com/hugsy/gef](https://github.com/hugsy/gefv)
 * [GEF documentation](http://gef.rtfd.io/)
 
+This plugin is aimed at exploit developers and reverse-engineers. It extends GDB using the Python API (2/3),
+so you need a reasonably recent version of GDB (>=7). It adds more than 50 commands but even if you stick
+to the default GDB set it is extremely useful by presenting you with a summary `context` after each command:
+
+> check_pin-before-call.jpg
+
+<img src="../media/check_pin-before-call.jpg"></img>
+
 # sources and further reading
 
