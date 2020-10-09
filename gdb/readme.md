@@ -1,5 +1,15 @@
 # gdb
 
+<!-- vim-markdown-toc GFM -->
+
+  * [configuration](#configuration)
+  * [plugins](#plugins)
+    * [Voltron](#voltron)
+    * [GEF](#gef)
+* [sources and further reading](#sources-and-further-reading)
+
+<!-- vim-markdown-toc -->
+
 TODO add custom screenshots
 
 ## configuration
