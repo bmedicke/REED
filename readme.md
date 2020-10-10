@@ -63,7 +63,7 @@ A couple of conventions to make orientation a bit easier:
   * [Python 3](#python-3)
   * [Compiler Explorer](#compiler-explorer)
   * [binvis.io](#binvisio)
-  * [dotfiles](#dotfiles)
+* [dotfiles](#dotfiles)
 * [exploit-development](#exploit-development)
 * [reverse-engineering](#reverse-engineering)
 * [sources and further reading](#sources-and-further-reading)
@@ -940,7 +940,7 @@ See [[binutils]](#sources-and-further-reading).
 * visual analysis of binary files
 * [binvis.io](https://binvis.io/)
 
-## dotfiles
+# dotfiles
 
 [dotfiles ↣](dotfiles)
 
