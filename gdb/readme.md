@@ -47,15 +47,15 @@ Both plugins are highly customizable.
 * [github.com/snare/voltron](https://github.com/snare/voltron)
 
 Voltron provides "views" into certain aspects of the debugger (not just GDB). My favorite is the stack view.
-Changes since the last instruction are color coded and you can quickly scroll through the memory near the current frame (both ways).
+You can quickly scroll through the memory near the current frame (both ways).
 
 Voltron views can be displayed in any TTY but they really shine when you use them in tmux (or screen).
 
 Here's an example from the main readme:
 
-> stack-dump-main.jpg
+> voltron.jpg
 
-<img src="../media/stack-dump-main.jpg"></img>
+<img src="../media/voltron.jpg"></img>
 
 ### GEF
 
@@ -67,11 +67,14 @@ Here's an example from the main readme:
 This plugin is aimed at exploit developers and reverse-engineers. It extends GDB using the Python API (2/3),
 so you need a reasonably recent version of GDB (>=7). It adds more than 50 commands but even if you stick
 to the default GDB set it is extremely useful by presenting you with a summary `context` after each command
-that saves you a lot of typing:
+that saves you a lot of typing.
 
-> check_pin-before-call.jpg
+Any changes in registers or memory since the last instruction are color coded.
 
-<img src="../media/check_pin-before-call.jpg"></img>
+> gdb-gef.jpg
+
+<img src="../media/gdb-gef.jpg"></img>
+
 
 # sources and further reading
 
