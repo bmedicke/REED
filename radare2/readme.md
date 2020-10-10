@@ -35,6 +35,9 @@ The provided command line utilities are:
 | `rasm2`       | CLI assembler/disassembler (x86, x64, Java, etc.)  |
 | `rax2`        | base/radix/ASCII/string converter                  |
 
+Radare2 can open many input/output sources as if they were files. Among others:<br>
+disks, files, kernel drivers, network connections, partitions, processes.
+
 # configuration
 
 # sources and further reading
