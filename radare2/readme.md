@@ -50,13 +50,13 @@ You start in **command mode** (CLI). From here you can switch to
 **visual mode** (TUI) with the `V` command. In visual mode you can cycle through various
 print modes with the shortcuts `p` (next) and `P` (previous).
 
-The shortcut `q` gets you back to command mode.
+The shortcut `q` gets you back to command mode (so does `ctrl-d`).
 
 
 | mode                     | function                             |
 | ---                      | ---                                  |
 | command mode             | default mode, all commands available |
-| visual mode: hex         | hex editor (similar to `xxd`)        |
+| visual mode: hex         | hex editor view (similar to `xxd`)   |
 | visual mode: disas       |                                      |
 | visual mode: debug       |                                      |
 | visual mode: words       |                                      |
@@ -72,6 +72,9 @@ The shortcut `q` gets you back to command mode.
 
 In visual mode you use keyboard shortcuts. Press `??` to get the full list.
 You can still execute commands with `:` though, just like in Vim.
+You can continue to execute commands or close the prompt with `ctrl-d`
+or sending an empty line.
+
 
 # scripting with `r2pipe`
 
