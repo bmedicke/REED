@@ -5,6 +5,7 @@
 <!-- vim-markdown-toc GFM -->
 
 * [the basics](#the-basics)
+* [GUIs](#guis)
 * [configuration](#configuration)
 * [sources and further reading](#sources-and-further-reading)
 
@@ -37,6 +38,12 @@ The provided command line utilities are:
 
 Radare2 can open many input/output sources as if they were files. Among others:<br>
 disks, files, kernel drivers, network connections, partitions, processes.
+
+# GUIs
+
+* web interface: `r2 -c=H --`
+* Cutter ([cutter.re](cutter.re))
+* about 5 that are abandoned by now
 
 # configuration
 
