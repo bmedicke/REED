@@ -46,17 +46,21 @@ disks, files, kernel drivers, network connections, partitions, processes.
 `r2` supports different **modes of operation**. You can think of it a
 bit like the Vim of reverse engineering tools.
 
-You start in command mode (CLI). From here you can switch to
-visual mode (TUI) with the `V` command. In visual mode you can cycle through various
+You start in **command mode** (CLI). From here you can switch to
+**visual mode** (TUI) with the `V` command. In visual mode you can cycle through various
 print modes with the shortcuts `p` (next) and `P` (previous).
 
-`q` gets you back to command mode.
+The shortcut `q` gets you back to command mode.
 
 
-| mode                  | function                             |
-| ---                   | ---                                  |
-| command mode          | default mode, all commands available |
-| visual mode: hex mode | hex editor (similar to `xxd`)        |
+| mode                     | function                             |
+| ---                      | ---                                  |
+| command mode             | default mode, all commands available |
+| visual mode: hex         | hex editor (similar to `xxd`)        |
+| visual mode: disas       |                                      |
+| visual mode: debug       |                                      |
+| visual mode: words       |                                      |
+| visual mode: buf         |                                      |
 
 > r2-command-mode.jpg
 
@@ -65,6 +69,9 @@ print modes with the shortcuts `p` (next) and `P` (previous).
 > r2-visual-mode-hex.jpg
 
 <img src="../media/r2-visual-mode-hex.jpg"></img>
+
+In visual mode you use keyboard shortcuts. Press `??` to get the full list.
+You can still execute commands with `:` though, just like in Vim.
 
 # scripting with `r2pipe`
 
