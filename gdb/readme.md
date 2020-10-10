@@ -1,16 +1,21 @@
-# gdb
+# GDB
+
+# toc
 
 <!-- vim-markdown-toc GFM -->
 
-  * [configuration](#configuration)
-  * [plugins](#plugins)
-    * [Voltron](#voltron)
-    * [GEF](#gef)
+* [the basics](#the-basics)
+* [configuration](#configuration)
+* [plugins](#plugins)
+  * [Voltron](#voltron)
+  * [GEF](#gef)
 * [sources and further reading](#sources-and-further-reading)
 
 <!-- vim-markdown-toc -->
 
-## configuration
+# the basics
+
+# configuration
 
 GDB looks for a local configuration file under `~/.gdbinit`. Here's a minimal example:
 
@@ -32,7 +37,7 @@ You can create an alias to achieve the same though:
 alias gdb="gdb -q"
 ```
 
-## plugins
+# plugins
 
 GDB on its own is great, if not very pretty and user-friendly for novices.
 The following are two plugins that extend its functionality while
@@ -40,7 +45,7 @@ adding a couple of very useful features that will make your life easier.
 
 Both plugins are highly customizable.
 
-### Voltron
+## Voltron
 
 * [github.com/snare/voltron](https://github.com/snare/voltron)
 
@@ -54,7 +59,7 @@ This is an example of running Voltron in a tmux split under GEF:
 
 <img src="../media/voltron.jpg"></img>
 
-### GEF
+## GEF
 
 **GDB Enhanced Features**
 
