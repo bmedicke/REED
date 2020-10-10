@@ -910,6 +910,8 @@ Dynamic analysis on the other hand executes the binary.
 
 ## Radare2
 
+[radare2 ↣](radare2)
+
 ## Ghidra
 
 ## binutils
