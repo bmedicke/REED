@@ -18,4 +18,4 @@ See [[r2b]](#sources-and-further-reading).
 
 # sources and further reading
 
-* [r2b] pancake. (2020). The Official Radare2 Book. https://book.rada.re/
+* [r2b] pancake, maijin, et al. (2020). The Official Radare2 Book. https://book.rada.re/
