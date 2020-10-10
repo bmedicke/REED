@@ -46,12 +46,13 @@ disks, files, kernel drivers, network connections, partitions, processes.
 `r2` supports different **modes of operation**. You can think of it a
 bit like the Vim of reverse engineering tools.
 
-You start in **command mode** (CLI). From here you can switch to
-**visual mode** (TUI) with the `V` command. In visual mode you can cycle through various
+You start in **command mode** (CLI). Execute the `?` command to get help.
+From command mode you can switch to **visual mode** (TUI) with
+the `V` command. In visual mode you can cycle through various
 print modes with the shortcuts `p` (next) and `P` (previous).
 
-The shortcut `q` gets you back to command mode (so does `ctrl-d`).
-
+The shortcut `q` gets you back to command mode.<br>
+The command `q` exits Radare2. You can also use `ctrl-d` both times.
 
 | mode                     | function                             |
 | ---                      | ---                                  |
@@ -70,7 +71,8 @@ The shortcut `q` gets you back to command mode (so does `ctrl-d`).
 
 <img src="../media/r2-visual-mode-hex.jpg"></img>
 
-In visual mode you use keyboard shortcuts. Press `??` to get the full list.
+You will have noticed that in visual mode you use keyboard shortcuts.
+Press `??` to get the full list.
 You can still execute commands with `:` though, just like in Vim.
 You can continue to execute commands or close the prompt with `ctrl-d`
 or by sending an empty line.
