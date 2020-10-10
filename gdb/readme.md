@@ -49,11 +49,10 @@ Both plugins are highly customizable.
 Voltron provides "views" into certain aspects of the debugger (not just GDB). My favorite is the stack view.
 You can quickly scroll through the memory near the current frame (both ways).
 
-Voltron views can be displayed in any TTY but they really shine when you use them in tmux (or screen).
+Voltron views can be displayed in any TTY but they really shine when you use them in tmux (or screen).<br>
+This is an example of running Voltron in a tmux split under GEF:
 
-Here's an example from the main readme:
-
-> voltron.jpg
+> voltron.jpg<br>
 
 <img src="../media/voltron.jpg"></img>
 
