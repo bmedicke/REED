@@ -14,6 +14,10 @@
 
 See [[r2b]](#sources-and-further-reading).
 
+Radare (RawDataRecovery) was started as a forensic hex editor.
+Over the years it has evolved into a reverse-engineering and
+binary analysis framework. Radare2 is a complete rewrite.
+
 # configuration
 
 # sources and further reading
