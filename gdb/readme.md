@@ -10,8 +10,6 @@
 
 <!-- vim-markdown-toc -->
 
-TODO add custom screenshots
-
 ## configuration
 
 GDB looks for a local configuration file under `~/.gdbinit`. Here's a minimal example:
