@@ -73,7 +73,7 @@ The shortcut `q` gets you back to command mode (so does `ctrl-d`).
 In visual mode you use keyboard shortcuts. Press `??` to get the full list.
 You can still execute commands with `:` though, just like in Vim.
 You can continue to execute commands or close the prompt with `ctrl-d`
-or sending an empty line.
+or by sending an empty line.
 
 
 # scripting with `r2pipe`
