@@ -12,7 +12,7 @@
 
 # the basics
 
-See [[r2b]](#sources-and-further-reading)
+See [[r2b]](#sources-and-further-reading).
 
 # configuration
 
