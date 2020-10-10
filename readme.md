@@ -54,6 +54,8 @@ A couple of conventions to make orientation a bit easier:
   * [dynamic](#dynamic)
 * [tools](#tools)
   * [GDB](#gdb)
+  * [gcc](#gcc)
+  * [nasm](#nasm)
   * [Radare2](#radare2)
   * [Ghidra](#ghidra)
   * [binutils](#binutils)
@@ -907,6 +909,10 @@ Dynamic analysis on the other hand executes the binary.
 ## GDB
 
 [GDB ↣](gdb)
+
+## gcc
+
+## nasm
 
 ## Radare2
 
