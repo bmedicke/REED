@@ -26,8 +26,8 @@ The provided command line utilities are:
 | tool name     | function                                           |
 | ---           | ---                                                |
 | `rabin2`      | extracts info about a binary (ELF, PE, etc.)       |
-| **`radare2`** | the main tool (TUI), aliased to `r2`               |
-| `radiff2`     | binary diffing, a more powerfull `cmp`             |
+| **`radare2`** | the main tool (CLI/TUI), aliased to `r2`           |
+| `radiff2`     | binary diffing, a more powerful `cmp`              |
 | `rafind2`     | finds byte patterns                                |
 | `ragg2`       | compiler that creates tiny binaries for injection  |
 | `rahash2`     | block based hashing (great to compare large files) |
