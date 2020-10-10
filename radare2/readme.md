@@ -4,14 +4,18 @@
 
 <!-- vim-markdown-toc GFM -->
 
-* [configuration](#configuration)
 * [the basics](#the-basics)
+* [configuration](#configuration)
 * [sources and further reading](#sources-and-further-reading)
 
 <!-- vim-markdown-toc -->
 
-# configuration
-
 # the basics
 
+See [[r2b]](#sources-and-further-reading)
+
+# configuration
+
 # sources and further reading
+
+* [r2b] pancake. (2020). The Official Radare2 Book. https://book.rada.re/
