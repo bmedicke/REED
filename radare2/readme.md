@@ -50,7 +50,7 @@ disks, files, kernel drivers, network connections, partitions, processes.
 # GUIs
 
 * web interface: `r2 -c=H --`
-* Cutter ([cutter.re](cutter.re))
+* Cutter ([cutter.re](https://cutter.re))
 * about 5 that are abandoned by now
 
 # sources and further reading
