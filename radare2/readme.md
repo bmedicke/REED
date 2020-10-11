@@ -7,6 +7,7 @@
 * [installation](#installation)
 * [the basics](#the-basics)
 * [`r2`](#r2)
+  * [the grammar of commands](#the-grammar-of-commands)
 * [scripting with `r2pipe`](#scripting-with-r2pipe)
 * [configuration](#configuration)
 * [GUIs](#guis)
@@ -106,6 +107,37 @@ The command `q` exits Radare2. You can also use `ctrl-d` both times.
     * it is also the top line in the hex-dump
   * the instruction pointer is declared via a comment (`; rip`)
 
+---
+
+To open a file for analysis run `r2 /path/to/bin`. If you plan on modifying it add the
+`-w` flag, if you would like to open the file in debug mode (to step through it) add `-d`.
+
+## the grammar of commands
+
+Modes are not the only similarity to Vim.
+Just likt it, Radare2 uses the chaining of single characters to create commands.
+
+Each command starts with a **single mnemonic character**.<br>
+For instance: every command that is related to some kind of analysis starts with `a`.
+
+You can use the single character as a command or append more characters and symbols
+to get access to more functionality in the corresponding category. A single `a`, for example,
+is aliased to `aai`, which stands for '**a**nalysis **a**ll **i**nfo' which shows info of all analysis paramters.
+
+The full list can be seen with the `?` command, here is a short excerpt:
+
+| first character | mnemonic     | as direct command |
+| ---             | ---          | ---               |
+| `a`             | **a**nalysis |                   |
+| `d`             | **d**ebugger |                   |
+| `i`             | **i**nfo     |                   |
+| `o`             | **o**pen     |                   |
+| `p`             | **p**rint    |                   |
+| `s`             | **s**eek     |                   |
+| `V`             | **V**isual   |                   |
+
+To learn more about the direct command and sub commands
+you can append an `?` to get detailed help.
 
 
 # scripting with `r2pipe`
