@@ -8,6 +8,7 @@
 * [the basics](#the-basics)
 * [`r2`](#r2)
   * [the grammar of commands](#the-grammar-of-commands)
+  * [common commands](#common-commands)
 * [scripting with `r2pipe`](#scripting-with-r2pipe)
 * [configuration](#configuration)
 * [GUIs](#guis)
@@ -139,6 +140,19 @@ The full list can be seen with the `?` command, here is a short excerpt:
 To learn more about the direct command and sub commands
 you can append an `?` to get detailed help.
 
+## common commands
+
+These should get you started.
+
+* `aa`,  analyze all flags starting with `sym.` and `entry0` (you can add more `a`s for additional analysis)
+* `afl`, list all functions
+* `ie`, info about entrypoints
+* `iS`, info about sections
+* `ii`, info about imports
+* `s main`, seek to `main()`
+* `db main`, set breakpoint at `main()`
+* `dc`, continue execution
+* `pdf`, print disassembly of current (seeked-to) function
 
 # scripting with `r2pipe`
 
