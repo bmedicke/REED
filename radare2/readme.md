@@ -52,17 +52,23 @@ From command mode you can switch to **visual mode** (TUI) with
 the `V` command. In visual mode you can cycle through various
 print modes with the shortcuts `p` (next) and `P` (previous).
 
+| mode               | function                                  |
+| ---                | ---                                       |
+| command mode       | default mode, all commands available      |
+| visual mode: hex   | hex editor view (similar to `xxd`)        |
+| visual mode: disas | disassembly view                          |
+| visual mode: debug | disassembly view with registers and stack |
+| visual mode: word  |                                           |
+| visual mode: buf   |                                           |
+
+You will have noticed that in visual mode you use keyboard shortcuts.
+Press `??` to get the full list.
+You can still execute commands with `:` though, just like in Vim.
+You can continue to execute commands or close the prompt with `ctrl-d`
+or by sending an empty line.
+
 The shortcut `q` gets you back to command mode.<br>
 The command `q` exits Radare2. You can also use `ctrl-d` both times.
-
-| mode                     | function                             |
-| ---                      | ---                                  |
-| command mode             | default mode, all commands available |
-| visual mode: hex         | hex editor view (similar to `xxd`)   |
-| visual mode: disas       |                                      |
-| visual mode: debug       |                                      |
-| visual mode: words       |                                      |
-| visual mode: buf         |                                      |
 
 ---
 
@@ -71,8 +77,9 @@ The command `q` exits Radare2. You can also use `ctrl-d` both times.
 <img src="../media/r2-command-mode.jpg"></img>
 
 * *note the following:*
-  * command mode: the prompt shows the current position in the file
-  * this position is the `seek`ed-to line (not the instruction pointer)
+  * in command mode the prompt shows the current position in the file
+    * this position is the currently `seek`ed-to line (not the instruction pointer)
+    * most commands operate on this address
 
 ---
 
@@ -81,14 +88,10 @@ The command `q` exits Radare2. You can also use `ctrl-d` both times.
 <img src="../media/r2-visual-mode-hex.jpg"></img>
 
 * *note the following:*
-  * hex visual mode: you can see the current position in the top line
-  * note that it is also the top line in the hex-dump
+  * in visual mode you can see the current position in the top line (far left)
+    * it is also the top line in the hex-dump
+  * the instruction pointer is declared via a comment (`; rip`)
 
-You will have noticed that in visual mode you use keyboard shortcuts.
-Press `??` to get the full list.
-You can still execute commands with `:` though, just like in Vim.
-You can continue to execute commands or close the prompt with `ctrl-d`
-or by sending an empty line.
 
 
 # scripting with `r2pipe`
