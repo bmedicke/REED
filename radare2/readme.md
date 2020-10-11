@@ -167,7 +167,7 @@ These should get you started.
 Shortcuts are executed immediately and don't require an enter. Here's a selection:
 
 * `?` get help
-* `h`, `j`, `k`, `l`, move left/down/up/right (Vim-like navigation)
+* `h`, `j`, `k`, `l`, seek left/down/up/right (Vim-like navigation)
 * `c` toggle cursor, navigate as above
 * `n` and `N`, seek to next/previous function
 * `.` seek to instruction pointer
