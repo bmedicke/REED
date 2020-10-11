@@ -288,6 +288,13 @@ eco matrix
 
 # use 256 colors:
 e src.color = 2
+
+# show descriptions for opcodes,
+# great while learning a new architecture:
+e dbg.describe = 1
+
+# show pseudocode instead of opcodes:
+e dbg.pseudo = 0
 ```
 
 # GUIs
