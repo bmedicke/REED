@@ -81,7 +81,8 @@ The command `q` exits Radare2. You can also use `ctrl-d` both times.
 <img src="../media/r2-visual-mode-hex.jpg"></img>
 
 * *note the following:*
-  * hex visual mode: you can see the current position at the top
+  * hex visual mode: you can see the current position in the top line
+  * note that it is also the top line in the hex-dump
 
 You will have noticed that in visual mode you use keyboard shortcuts.
 Press `??` to get the full list.
