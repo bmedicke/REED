@@ -1,5 +1,9 @@
 # Radare2
 
+Radare (RawDataRecovery) was started as a forensic hex editor.
+Over the years it has evolved into a reverse-engineering and
+binary analysis framework. Radare2 is a complete rewrite.
+
 # toc
 
 <!-- vim-markdown-toc GFM -->
@@ -34,13 +38,7 @@ You might want to compare your version (`r2 -v`) to the latest commit.
 
 See [[r2b]](#sources-and-further-reading).
 
-Radare (RawDataRecovery) was started as a forensic hex editor.
-Over the years it has evolved into a reverse-engineering and
-binary analysis framework. Radare2 is a complete rewrite.
-
----
-
-It follows the Unix philosophy of minimalist, modular programs.
+Radare2 follows the Unix philosophy of minimalist, modular programs.
 The provided command line utilities are:
 
 | tool name     | function                                           |
