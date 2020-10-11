@@ -195,8 +195,9 @@ These should get you started.
 * `aa`,  analyze all flags starting with `sym.` and `entry0` (you can add more `a`s for additional analysis)
 * `afl`, list all functions
 * `ie`, info about entrypoints
-* `iS`, info about sections
 * `ii`, info about imports
+* `il`, info about libraries
+* `iS`, info about sections
 * `s main`, seek to `main()`
 * `db main`, set breakpoint at `main()`
 * `dc`, continue execution
