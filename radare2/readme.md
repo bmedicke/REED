@@ -126,15 +126,15 @@ is aliased to `aai`, which stands for '**a**nalysis **a**ll **i**nfo' which show
 
 The full list can be seen with the `?` command, here is a short excerpt:
 
-| first character | mnemonic     | as direct command |
-| ---             | ---          | ---               |
-| `a`             | **a**nalysis |                   |
-| `d`             | **d**ebugger |                   |
-| `i`             | **i**nfo     |                   |
-| `o`             | **o**pen     |                   |
-| `p`             | **p**rint    |                   |
-| `s`             | **s**eek     |                   |
-| `V`             | **V**isual   |                   |
+| first character | mnemonic     | as direct command                                              |
+| ---             | ---          | ---                                                            |
+| `a`             | **a**nalysis | aliased to `aai`                                               |
+| `d`             | **d**ebugger | aliased to `d?`                                                |
+| `i`             | **i**nfo     | show info of current file                                      |
+| `o`             | **o**pen     | list open file/open file (with parameter)                      |
+| `p`             | **p**rint    | aliased to `p?`                                                |
+| `s`             | **s**eek     | print current address/seek to address (with parameter)         |
+| `V`             | **V**isual   | start visual mode                                              |
 
 To learn more about the direct command and sub commands
 you can append an `?` to get detailed help.
