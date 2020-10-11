@@ -179,6 +179,8 @@ By appending a format modifier you can even pretty print it `ij~{}`:
 
 <img src="../media/r2-json.jpg"></img>
 
+To learn more about format modifiers (and the build in `grep` that powers them) take a look at `~?`.
+
 ---
 
 Finally, output can be **piped** directly to another program!<br>
