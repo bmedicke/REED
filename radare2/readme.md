@@ -305,7 +305,7 @@ This can be especially useful in combination with `ctrl-r`, the reverse-incremen
 ---
 
 It is possible to **write changes to cache** for programs that were opened in read-only mode: `e io.cache=1`.
-Only the file in memory will be changed.
+Only the file in memory will be changed. This allows you to play with read only files (instead of getting the `Failed to write` error).
 
 # GUIs
 
