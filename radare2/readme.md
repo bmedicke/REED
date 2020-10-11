@@ -143,7 +143,7 @@ The full list can be seen with the `?` command, here is a short excerpt:
 | `V`             | **V**isual   | start visual mode                                              |
 
 To learn more about the direct command and sub commands
-you can append an `?` to get detailed help.
+you can append a `?` to get detailed help.
 
 ## common commands
 
