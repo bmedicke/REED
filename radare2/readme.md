@@ -6,7 +6,7 @@
 
 * [installation](#installation)
 * [the basics](#the-basics)
-  * [`r2`](#r2)
+* [`r2`](#r2)
 * [scripting with `r2pipe`](#scripting-with-r2pipe)
 * [configuration](#configuration)
 * [GUIs](#guis)
@@ -56,7 +56,7 @@ The provided command line utilities are:
 Radare2 can open many input/output sources as if they were files. Among others:<br>
 disks, files, kernel drivers, network connections, partitions, processes.
 
-## `r2`
+# `r2`
 
 `r2` supports different **modes of operation**. You can think of it a
 bit like the Vim of reverse engineering tools.
