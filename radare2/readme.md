@@ -171,7 +171,7 @@ You can simply run `px512@0x0` which allows you to get the result and not change
 A postfix worth mentioning is `j` that formats output as **JSON**.
 `i` produces information for the currently open file, such as
 the binary format. Using `ij` you get the same information as
-JSON array.
+a JSON array.
 
 By appending a format modifier you can even pretty print it `ij~{}`:
 
