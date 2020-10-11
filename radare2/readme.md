@@ -144,6 +144,23 @@ you can append an `?` to get detailed help.
 
 # configuration
 
+Configuration in `r2` happens with the `e`-family of commands.
+
+Use `ev` to learn about all options and what they do.
+Use `e? src.color` to only learn about the color mode option.
+
+From within `r2` you can use the `ed` command to open the config file (`~/.radare2rc`) in your editor.
+
+> `.radare2rc`
+
+```sh
+# use matrix color scheme:
+eco matrix
+
+# use 256 colors:
+e src.color = 2
+```
+
 # GUIs
 
 * web interface: `r2 -c=H --`
