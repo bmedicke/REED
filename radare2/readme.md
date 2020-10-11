@@ -297,6 +297,16 @@ e dbg.describe = 1
 e dbg.pseudo = 0
 ```
 
+---
+
+You can **toggle boolean options** with `e!`. This will toggle opcode descriptions: `e! asm.describe`.
+This can be especially useful in combination with `ctrl-r`, the reverse-incremental-search for commands.
+
+---
+
+It is possible to **write changes to cache** for programs that were opened in read-only mode: `e io.cache=1`.
+Only the file in memory will be changed.
+
 # GUIs
 
 * web interface: `r2 -c=H --`
