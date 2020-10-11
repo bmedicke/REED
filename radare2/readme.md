@@ -256,6 +256,13 @@ Vpp # open visual mode (debug view).
 # returns 0 despite wrong pin!
 ```
 
+> r2-check_pin-pre-patch.jpg
+
+<img src="../media/r2-check_pin-pre-patch.jpg"></img>
+
+* *note the following:*
+  * the line that will be patched by the process above is highlighted (pre-patch state)
+
 # scripting with `r2pipe`
 
 # configuration
