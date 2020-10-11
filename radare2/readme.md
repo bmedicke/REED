@@ -9,6 +9,7 @@
 * [`r2`](#r2)
   * [the grammar of commands](#the-grammar-of-commands)
   * [common commands](#common-commands)
+  * [visual mode shortcuts](#visual-mode-shortcuts)
 * [scripting with `r2pipe`](#scripting-with-r2pipe)
 * [configuration](#configuration)
 * [GUIs](#guis)
@@ -159,6 +160,8 @@ These should get you started.
 * `Vpp`, enter visual mode in hex view
 * `V!`, enter visual-panels mode
 * `VV`, enter graph mode
+
+## visual mode shortcuts
 
 # scripting with `r2pipe`
 
