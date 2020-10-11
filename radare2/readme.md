@@ -175,7 +175,7 @@ Shortcuts are executed immediately and don't require an enter. Here's a selectio
 * `n` and `N`, seek to next/previous function
 * `.` seek to instruction pointer
 * `s` and `S`, step or step over
-* `!`, toggle visual panel mode
+* `!`, toggle visual-panels mode
 * `V`, switch through graph modes
 * `q`, quit
 
