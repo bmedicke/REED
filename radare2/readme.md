@@ -18,7 +18,7 @@
 
 You are strongly encouraged to always use the absolute latest version of Radare2
 (it is a requirement to get any support). <br>
-As such, the best way to install it is directly from the git repo:
+As such, the best way to install it is directly from the [git repo](https://github.com/radareorg/radare2):
 
 ```sh
 git clone https://github.com/radareorg/radare2.git
