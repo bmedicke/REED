@@ -22,7 +22,7 @@ As such, the best way to install it is directly from the git repo:
 
 ```sh
 git clone https://github.com/radareorg/radare2.git
-radare2/sys/install.sh
+radare2/sys/install.sh # also used to update.
 ```
 
 You might want to compare your version (`r2 -v`) to the latest commit.
