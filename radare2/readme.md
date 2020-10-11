@@ -182,7 +182,7 @@ By appending a format modifier you can even pretty print it `ij~{}`:
 ---
 
 Finally, output can be **piped** directly to another program!<br>
-Using the JSON example from above let's open the output in VIM: `ij~{}|vim - +"set ft=json"`.
+Using the JSON example from above let's open the output in Vim: `ij~{}|vim - +"set ft=json"`.
 
 
 ## common commands
