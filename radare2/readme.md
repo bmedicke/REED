@@ -149,7 +149,7 @@ you can append a `?` to get detailed help.
 
 **Numbers** can also be used to modify how certain commands behave:
 
-* `px` **p**rints a he**x**dump of a couple of Bytes.
+* `px` **p**rints a he**x**dump of a couple of Bytes
 * `2px` executes it twice
 * `px2` prints exactly 2 Bytes
 
