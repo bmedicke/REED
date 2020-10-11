@@ -229,8 +229,8 @@ Shortcuts are executed immediately and don't require an enter. Here's a selectio
 
 ## patching a binary
 
-Let's patch the `check_pin` binary from the [[exploit-development]](../exploit-development) section
-so that it always return `EXIT_SUCCESS`, even if we provide a wrong pin.
+Let's patch the `check_pin` binary from the [exploit-development ↣](../exploit-development#check_pin-source)
+section so that it always returns `EXIT_SUCCESS`, even if we provide a wrong pin to it.
 
 ```sh
 cp check_pin check_pin_cracked # make a backup.
@@ -250,7 +250,7 @@ Vpp # open visual mode (debug view).
 :s 0x80491c3 # seek to: mov eax, 1 # sets return value to 1 for wrong pins.
 :wa mov eax, 0 # change instruction to set eax to 0 -> return success.
 
-# exit r2 and test binary:
+# exit r2 and test binary with wrong pin:
 ./check_pin_cracked < <(123); echo $?
 
 # returns 0 despite wrong pin!
