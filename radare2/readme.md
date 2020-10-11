@@ -76,6 +76,8 @@ print modes with the shortcuts `p` (next) and `P` (previous).
 | visual mode: debug | disassembly view with registers and stack |
 | visual mode: word  |                                           |
 | visual mode: buf   |                                           |
+| visual-panels mode | advanced, panel based TUI                 |
+| visual graph mode  | control flow diagrams akin to IDA pro     |
 
 You will have noticed that in visual mode you use keyboard shortcuts.
 Press `??` to get the full list.
@@ -153,6 +155,9 @@ These should get you started.
 * `db main`, set breakpoint at `main()`
 * `dc`, continue execution
 * `pdf`, print disassembly of current (seeked-to) function
+* `Vpp`, enter visual mode in hex view
+* `V!`, enter visual-panels mode
+* `VV`, enter graph mode
 
 # scripting with `r2pipe`
 
