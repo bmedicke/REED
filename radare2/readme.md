@@ -4,6 +4,7 @@
 
 <!-- vim-markdown-toc GFM -->
 
+* [installation](#installation)
 * [the basics](#the-basics)
   * [`r2`](#r2)
 * [scripting with `r2pipe`](#scripting-with-r2pipe)
@@ -12,6 +13,19 @@
 * [sources and further reading](#sources-and-further-reading)
 
 <!-- vim-markdown-toc -->
+
+# installation
+
+You are strongly encouraged to always use the absolute latest version of Radare2
+(it is a requirement to get any support). <br>
+As such, the best way to install it is directly from the git repo:
+
+```sh
+git clone https://github.com/radareorg/radare2.git
+radare2/sys/install.sh
+```
+
+You might want to compare your version (`r2 -v`) to the latest commit.
 
 # the basics
 
