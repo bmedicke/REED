@@ -230,7 +230,7 @@ Shortcuts are executed immediately and don't require an enter. Here's a selectio
 ## patching a binary
 
 Let's patch the `check_pin` binary from the [exploit-development ↣](../exploit-development#check_pin-source)
-section so that it always returns `EXIT_SUCCESS`, even if we provide a wrong pin to it.
+section so that it always returns `EXIT_SUCCESS` (`0`), even if we provide a wrong pin to it.
 
 ```sh
 cp check_pin check_pin_cracked # make a backup.
