@@ -120,7 +120,7 @@ Just likt it, Radare2 uses the chaining of single characters to create commands.
 Each command starts with a **single mnemonic character**.<br>
 For instance: every command that is related to some kind of analysis starts with `a`.
 
-You can use the single character as a command or append more characters and symbols
+You can use the single character as a command directly or append more characters and symbols
 to get access to more functionality in the corresponding category. A single `a`, for example,
 is aliased to `aai`, which stands for '**a**nalysis **a**ll **i**nfo' which shows info of all analysis paramters.
 
