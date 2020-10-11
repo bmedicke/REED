@@ -72,6 +72,7 @@ The command `q` exits Radare2. You can also use `ctrl-d` both times.
 
 * *note the following:*
   * command mode: the prompt shows the current position in the file
+  * this position is the `seek`ed-to line (not the instruction pointer)
 
 ---
 
@@ -80,7 +81,7 @@ The command `q` exits Radare2. You can also use `ctrl-d` both times.
 <img src="../media/r2-visual-mode-hex.jpg"></img>
 
 * *note the following:*
-  * visual mode: you can see the current position at the top
+  * hex visual mode: you can see the current position at the top
 
 You will have noticed that in visual mode you use keyboard shortcuts.
 Press `??` to get the full list.
