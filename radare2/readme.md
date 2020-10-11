@@ -145,6 +145,14 @@ The full list can be seen with the `?` command, here is a short excerpt:
 To learn more about the direct command and sub commands
 you can append a `?` to get detailed help.
 
+---
+
+**Numbers** can also be used to modify how certain commands behave:
+
+* `px` **p**rints a he**x**dump of a couple of Bytes.
+* `2px` executes it twice
+* `px2` prints exactly 2 Bytes
+
 ## common commands
 
 These should get you started.
