@@ -4,6 +4,9 @@ Radare (RawDataRecovery) was started as a forensic hex editor.
 Over the years it has evolved into a reverse-engineering and
 binary analysis framework. Radare2 is a complete rewrite.
 
+It is (somewhat unfairly) known for its difficulty curve but once you get used to
+how it does things it's hard to go back.
+
 # toc
 
 <!-- vim-markdown-toc GFM -->
