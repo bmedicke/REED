@@ -136,6 +136,7 @@ The full list can be seen with the `?` command, here is a short excerpt:
 | `o`             | **o**pen     | list open file/open file (with parameter)                      |
 | `p`             | **p**rint    | aliased to `p?`                                                |
 | `s`             | **s**eek     | print current address/seek to address (with parameter)         |
+| `w`             | **w**rite    | aliased to `w?`                                                |
 | `V`             | **V**isual   | start visual mode                                              |
 
 To learn more about the direct command and sub commands
