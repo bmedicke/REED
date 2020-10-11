@@ -173,7 +173,12 @@ A postfix worth mentioning is `j` that formats output as **JSON**.
 the binary format. Using `ij` you get the same information as
 JSON array.
 
-By appending a format modifier you can even pretty print it: `ij~{}`.
+By appending a format modifier you can even pretty print it `ij~{}`:
+
+> r2-json.jpg
+
+<img src="../media/r2-json.jpg"></img>
+
 
 ## common commands
 
