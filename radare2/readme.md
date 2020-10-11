@@ -179,6 +179,10 @@ By appending a format modifier you can even pretty print it `ij~{}`:
 
 <img src="../media/r2-json.jpg" width=400px></img>
 
+---
+
+Finally, output can be **piped** directly to another program!<br>
+Using the JSON example from above let's open the output in VIM: `ij~{}|vim +"set ft=json"`.
 
 
 ## common commands
