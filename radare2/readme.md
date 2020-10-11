@@ -270,6 +270,8 @@ Vpp # open visual mode (debug view).
 Configuration in `r2` happens with the `e`-family of commands.
 
 Use `ev` to learn about all options, their value and what they do.
+This is a huge list so you might want to grep it for a keyword,
+for instance: `ev~color`.
 Use `e? src.color` to only learn about the color mode option.
 
 From within `r2` you can use the `ed` command to open the config file (`~/.radare2rc`) in your editor.
