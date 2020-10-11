@@ -118,7 +118,7 @@ To open a file for analysis run `r2 /path/to/bin`. If you plan on modifying it a
 ## the grammar of commands
 
 Modes are not the only similarity to Vim.
-Just likt it, Radare2 uses the chaining of single characters to create commands.
+Just like it, Radare2 uses the chaining of single characters to create commands.
 
 Each command starts with a **single mnemonic character**.<br>
 For instance: every command that is related to some kind of analysis starts with `a`.
