@@ -60,6 +60,7 @@ A couple of conventions to make orientation a bit easier:
   * [Ghidra](#ghidra)
   * [binutils](#binutils)
   * [binwalk](#binwalk)
+  * [dd](#dd)
   * [Python 3](#python-3)
   * [Compiler Explorer](#compiler-explorer)
   * [binvis.io](#binvisio)
@@ -927,6 +928,8 @@ Netwide Assembler.
 See [[binutils]](#sources-and-further-reading).
 
 ## binwalk
+
+## dd
 
 ## Python 3
 
