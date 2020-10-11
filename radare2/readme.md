@@ -17,6 +17,8 @@ how it does things, it's hard to go back.
   * [the grammar of commands](#the-grammar-of-commands)
   * [common commands](#common-commands)
   * [visual mode shortcuts](#visual-mode-shortcuts)
+* [usage examples](#usage-examples)
+  * [patching a binary](#patching-a-binary)
 * [scripting with `r2pipe`](#scripting-with-r2pipe)
 * [configuration](#configuration)
 * [GUIs](#guis)
@@ -222,6 +224,37 @@ Shortcuts are executed immediately and don't require an enter. Here's a selectio
 * `!`, toggle visual-panels mode
 * `V`, switch through graph modes
 * `q`, quit
+
+# usage examples
+
+## patching a binary
+
+Let's patch the `check_pin` binary from the [[exploit-development]](../exploit-development) section
+so that it always return `EXIT_SUCCESS`, even if we provide a wrong pin.
+
+```sh
+cp check_pin check_pin_cracked # make a backup.
+r2 -w check_pin_cracked # open binary in write mode.
+
+# r2
+aa # analyse binary.
+afl # get a list of functions.
+s main # seek to main().
+
+Vpp # open visual mode (debug view).
+# look at main() and see that it calls check_pin().
+:s dbg.check_pin # seek to it.
+/test # look for a test instruction.
+
+# decide how to patch the program.
+:s 0x80491c3 # seek to: mov eax, 1 # sets return value to 1 for wrong pins.
+:wa mov eax, 0 # change instruction to set eax to 0 -> return success.
+
+# exit r2 and test binary:
+./check_pin_cracked < <(123); echo $?
+
+# returns 0 despite wrong pin!
+```
 
 # scripting with `r2pipe`
 
