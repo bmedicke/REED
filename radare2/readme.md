@@ -158,6 +158,7 @@ These should get you started.
 * `Vpp`, enter visual mode in hex view
 * `V!`, enter visual-panels mode
 * `VV`, enter graph mode
+* `q!`, force quit without questions
 
 ## visual mode shortcuts
 
