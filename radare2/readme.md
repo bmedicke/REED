@@ -64,12 +64,16 @@ The command `q` exits Radare2. You can also use `ctrl-d` both times.
 | visual mode: words       |                                      |
 | visual mode: buf         |                                      |
 
+---
+
 > r2-command-mode.jpg
 
 <img src="../media/r2-command-mode.jpg"></img>
 
 * *note the following:*
   * command mode: the prompt shows the current position in the file
+
+---
 
 > r2-visual-mode-hex.jpg
 
