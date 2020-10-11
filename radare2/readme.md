@@ -153,6 +153,19 @@ you can append a `?` to get detailed help.
 * `2px` executes it twice
 * `px2` prints exactly 2 Bytes
 
+---
+
+Most commands are targeted at the position you are currently seeked to.
+It can be inconvenient to seek to a new address just because you need to run a
+single command there. This is were **temporary seeking** with `@` comes into play.
+
+As an example:
+
+* you are seeked to somewhere in the middle of a file
+* you would like to print 512 Bytes from the start of that file
+
+You can simply run `px512@0x0` which allows you to get the result and not change your current position.
+
 ## common commands
 
 These should get you started.
