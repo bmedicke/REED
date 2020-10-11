@@ -177,7 +177,8 @@ By appending a format modifier you can even pretty print it `ij~{}`:
 
 > r2-json.jpg
 
-<img src="../media/r2-json.jpg"></img>
+<img src="../media/r2-json.jpg" width=400px></img>
+
 
 
 ## common commands
