@@ -146,6 +146,7 @@ you can append an `?` to get detailed help.
 
 These should get you started.
 
+* `?`, get help
 * `aa`,  analyze all flags starting with `sym.` and `entry0` (you can add more `a`s for additional analysis)
 * `afl`, list all functions
 * `ie`, info about entrypoints
@@ -162,6 +163,18 @@ These should get you started.
 * `q!`, force quit without questions
 
 ## visual mode shortcuts
+
+Shortcuts are executed immediately and don't require an enter. Here's a selection:
+
+* `?` get help
+* `h`, `j`, `k`, `l`, move left/down/up/right (Vim-like navigation)
+* `c` toggle cursor, navigate as above
+* `n` and `N`, seek to next/previous function
+* `.` seek to instruction pointer
+* `s` and `S`, step or step over
+* `!`, toggle visual panel mode
+* `V`, switch through graph modes
+* `q`, quit
 
 # scripting with `r2pipe`
 
