@@ -231,7 +231,7 @@ Shortcuts are executed immediately and don't require an enter. Here's a selectio
 * `n` and `N`, seek to next/previous function
 * `.` seek to instruction pointer
 * `s` and `S`, step into or step over
-* `g` goto (seek) to flag/offset/register
+* `g` goto (seek) to flag/offset/register, tab completion!
 * `p` and `P`, switch trough print modes (next and previous)
 * `!`, toggle visual-panels mode
 * `$` set instruction poiner to current location
