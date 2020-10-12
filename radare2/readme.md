@@ -198,6 +198,7 @@ These should get you started.
 * `aa`,  analyze all flags starting with `sym.` and `entry0` (you can add more `a`s for additional analysis)
   * coming from other tools it might seem strange that this is not done by default, for the reason see: [[r2default]](#sources-and-further-reading)
 * `afl`, list all functions
+* `afvd`, list local vars/args
 * `ie`, info about entrypoints
 * `ii`, info about imports
 * `il`, info about libraries
