@@ -204,7 +204,8 @@ These should get you started.
 * `s main`, seek to `main()`
 * `db main`, set breakpoint at `main()`
 * `dc`, continue execution
-* `doo` or `ood`, reopen binary in debug mode (restart it)
+* `ood`, reopen binary in debug mode (restart it)
+* `oo+`, reopen with write privileges
 * `pdf`, print disassembly of current (seeked-to) function
 * `Vpp`, enter visual mode in hex view
 * `V!`, enter visual-panels mode
