@@ -240,7 +240,7 @@ This has a couple of advantages:
 
 * you can debug code you don't have the hardware/software for
 * registers are aliased to familiar names
-* you can chose exactly where to start emulation, where to stop it, and which operations to skip (i.e. function calls to external libraries)
+* you can chose exactly where to start emulation, where to stop it, and which operations to skip (e.g. function calls to external libraries)
 
 ---
 
