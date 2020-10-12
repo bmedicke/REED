@@ -132,6 +132,8 @@ You can use the single character as a command directly or append more characters
 to get access to more functionality in the corresponding category. A single `a`, for example,
 is aliased to `aai`, which stands for '**a**nalysis **a**ll **i**nfo' which shows info of all analysis paramters.
 
+Here's a visual example of the `d` command, which groups commands related to the **d**ebugger:
+
 > r2-command-flowchart.jpg
 
 <img src="../media/r2-command-flowchart.jpg"></img>
