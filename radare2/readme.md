@@ -230,8 +230,17 @@ Shortcuts are executed immediately and don't require an enter. Here's a selectio
 ## code emulation with ESIL
 
 ESIL stands for **E**valuable **S**trings **I**ntermediate **L**anguage.
-Like Forth it is a stack-based, imperative programming language that uses reverse Polish notation.
-Radare2 uses ESIL to create representations of different CPU architectures.
+Like Forth it is a stack-based, imperative programming language that uses reverse Polish (postfix) notation.
+You can use ESIL to create representations of different CPU architectures.
+
+Assembly, for any architecture that has been represented with ESIL, can be emulated in Radare2.
+
+This has a couple of advantages:
+
+* you can debug code you don't have the hardware/software for
+* registers are aliased to familiar names
+* you can chose exactly where to start emulation, where to stop it, and which operations to skip (i.e. function calls to external libraries)
+
 
 # usage examples
 
