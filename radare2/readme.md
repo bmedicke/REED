@@ -227,7 +227,7 @@ Shortcuts are executed immediately and don't require an enter. Here's a selectio
 * `p` and `P`, switch trough print modes (next and previous)
 * `!`, toggle visual-panels mode
 * `$` set instruction poiner to current location
-  * careful: this does not update the stack in any way
+  * careful: this does not update any memory or the stack
 * `V`, switch through graph modes
 * `q`, quit
 
