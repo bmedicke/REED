@@ -205,6 +205,7 @@ These should get you started.
 * `s main`, seek to `main()`
 * `db main`, set breakpoint at `main()`
 * `dc`, continue execution
+* `dr eax=0x0` zero out `eax` register
 * `ood`, reopen binary in debug mode (restart it)
 * `oo+`, reopen with write privileges
 * `pdf`, print disassembly of current (seeked-to) function
