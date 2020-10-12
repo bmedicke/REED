@@ -241,6 +241,20 @@ This has a couple of advantages:
 * registers are aliased to familiar names
 * you can chose exactly where to start emulation, where to stop it, and which operations to skip (i.e. function calls to external libraries)
 
+---
+
+The ESIL family of commands are prefixed with `ae`. For a list of commands use `ae?`.
+If you are interested in examples of the ESIL syntax you can use `ae??`.
+
+ESIL commands to get you started:
+
+* `aeim`, **i**nit **m**emory: set up ESIL VM stack and set instruction pointer to seeked-to address
+  * `aeim-`, tears it down again
+* `aes`, **s**tep one instruction (`s` in visual mode)
+  * `aesu <address>`, **s**tep **u**ntil \<address>
+  * `aeso`, **s**tep **o**ver one instruction
+  * `aess`, **s**tep **s**kip one instrction or call (does not emulate, use to save time)
+* `aer`, show **r**egisters (or just use `Vpp`)
 
 # usage examples
 
