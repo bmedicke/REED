@@ -54,6 +54,7 @@ A couple of conventions to make orientation a bit easier:
   * [dynamic](#dynamic)
 * [tools](#tools)
   * [GDB](#gdb)
+  * [LLVM](#llvm)
   * [GCC](#gcc)
   * [NASM](#nasm)
   * [Radare2](#radare2)
@@ -910,6 +911,8 @@ Dynamic analysis on the other hand executes the binary.
 ## GDB
 
 [GDB ↣](gdb)
+
+## LLVM
 
 ## GCC
 
