@@ -254,7 +254,7 @@ Here are some ESIL emulation commands to get you started:
 * `aes`, **s**tep one instruction (`s` in visual mode)
   * `aesu <address>`, **s**tep **u**ntil \<address>
   * `aeso`, **s**tep **o**ver one instruction (emulate but don't go into function)
-  * `aess`, **s**tep **s**kip one instrction or call (does not emulate, use it to save time)
+  * `aess`, **s**tep **s**kip one instruction or call (does not emulate, use it to save time)
 * `aer`, show **r**egisters (or just use `Vpp`)
 
 # usage examples
