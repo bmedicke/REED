@@ -31,7 +31,7 @@ how it does things, it's hard to go back.
 
 You are strongly encouraged to always use the absolute latest version of Radare2
 (it is a requirement to get any support). <br>
-As such, the best way to install it is directly from the [git repo](https://github.com/radareorg/radare2):
+As such, the best way to install it is directly from the git repository ([[r2repo]](#sources-and-further-reading)):
 
 ```sh
 git clone https://github.com/radareorg/radare2.git
@@ -350,3 +350,4 @@ Only the file in memory will be changed. This allows you to play with read-only 
 
 * [r2b] pancake, maijin, et al. (2020). The Official Radare2 Book. https://book.rada.re/
 * [r2default] pancake. (2015). Analysis By Default. https://radareorg.github.io/blog/posts/analysis-by-default/
+* [r2repo] pancake. (2020). radare2 GitHub repository. https://github.com/radareorg/radare2
