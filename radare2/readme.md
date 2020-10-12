@@ -247,10 +247,11 @@ r2 -w check_pin_cracked # open binary in write mode.
 aa # analyse binary.
 afl # get a list of functions.
 s main # seek to main().
-
 Vpp # open visual mode (debug view).
+
+# visual mode
 # look at main() and see that it calls check_pin().
-:s dbg.check_pin # seek to it.
+:s sym.check_pin # seek to it.
 /test # look for a test instruction.
 
 # decide how to patch the program.
