@@ -247,7 +247,7 @@ This has a couple of advantages:
 The ESIL family of commands are prefixed with `ae`. For a list of commands use `ae?`.
 If you are interested in examples of the ESIL syntax you can use `ae??`.
 
-ESIL commands to get you started:
+Here are some ESIL emulation commands to get you started:
 
 * `aeim`, **i**nit **m**emory: set up ESIL VM stack and set instruction pointer to seeked-to address
   * `aeim-`, tears it down again
