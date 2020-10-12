@@ -196,6 +196,7 @@ These should get you started.
 
 * `?`, get help
 * `aa`,  analyze all flags starting with `sym.` and `entry0` (you can add more `a`s for additional analysis)
+  * coming from other tools it might seem strange that this is not done by default, for the reason see: [[r2default]](#sources-and-further-reading)
 * `afl`, list all functions
 * `ie`, info about entrypoints
 * `ii`, info about imports
@@ -348,3 +349,4 @@ Only the file in memory will be changed. This allows you to play with read-only 
 # sources and further reading
 
 * [r2b] pancake, maijin, et al. (2020). The Official Radare2 Book. https://book.rada.re/
+* [r2default] pancake. (2015). Analysis By Default. https://radareorg.github.io/blog/posts/analysis-by-default/
