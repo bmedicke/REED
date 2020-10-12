@@ -259,6 +259,12 @@ ESIL commands to get you started:
 
 # usage examples
 
+All binaries that will be produced by these examples can be found in this folder.
+The unmodified versions of those binaries can be found in the respective folder of
+the section that introduced any one binary.
+
+**You should get in the habit of only running and debugging them inside of a VM**.
+
 ## patching a binary
 
 Let's patch the `check_pin` binary from the [exploit-development ↣](../exploit-development#check_pin-source)
