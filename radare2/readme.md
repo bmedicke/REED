@@ -17,6 +17,7 @@ how it does things, it's hard to go back.
   * [the grammar of commands](#the-grammar-of-commands)
   * [common commands](#common-commands)
   * [visual mode shortcuts](#visual-mode-shortcuts)
+  * [code emulation with ESIL](#code-emulation-with-esil)
 * [usage examples](#usage-examples)
   * [patching a binary](#patching-a-binary)
 * [scripting with `r2pipe`](#scripting-with-r2pipe)
@@ -224,6 +225,12 @@ Shortcuts are executed immediately and don't require an enter. Here's a selectio
 * `!`, toggle visual-panels mode
 * `V`, switch through graph modes
 * `q`, quit
+
+## code emulation with ESIL
+
+ESIL stands for **E**valuable **S**trings **I**ntermediate **L**anguage.
+Like Forth it is a stack-based, imperative programming language that uses reverse Polish notation.
+Radare2 uses ESIL to create representations of different CPU architectures.
 
 # usage examples
 
