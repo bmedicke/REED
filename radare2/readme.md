@@ -20,6 +20,7 @@ how it does things, it's hard to go back.
   * [code emulation with ESIL](#code-emulation-with-esil)
 * [usage examples](#usage-examples)
   * [patching a binary](#patching-a-binary)
+  * [solving a Linux crackme on macOS with ESIL](#solving-a-linux-crackme-on-macos-with-esil)
 * [scripting with `r2pipe`](#scripting-with-r2pipe)
 * [configuration](#configuration)
 * [GUIs](#guis)
@@ -313,6 +314,12 @@ Vpp # open visual mode (debug view).
 
 * *note the following:*
   * the line that will be patched by the process above is highlighted (pre-patch state)
+
+## solving a Linux crackme on macOS with ESIL
+
+The `crackme_calc` binary calculates the password at runtime. This makes it
+bothersome to get it via static analysis. Even if you have the source
+(which you do: [crackme_calc.c](../crackmes/crackme_calc.c)).
 
 # scripting with `r2pipe`
 
