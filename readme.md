@@ -111,7 +111,7 @@ Most modern CPUs use the same memory for data and instructions, like
 in the Von Neumann architecture.
 To avoid the Von Neumann bottleneck multiple levels of caches are
 added between CPU and memory (L1-Ln cache) and a seperate cache
-for instructions and data ist used in the lowest level (similar to
+for instructions and data is used in the lowest level (similar to
 the Harvard architecture).
 
 The resulting architecture is called Modified Harvard or
