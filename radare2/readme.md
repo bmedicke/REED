@@ -209,7 +209,7 @@ These should get you started.
 * `ii`, info about imports
 * `il`, info about libraries
 * `iS`, info about sections
-* `izz` strings in data section
+* `iz` strings in data section
 * `s main`, seek to `main()`
 * `db main`, set breakpoint at `main()`
 * `dc`, continue execution
