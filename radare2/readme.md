@@ -347,15 +347,15 @@ main # seek to main.
 
 ```sh
 # Alright, we have a compare followed by a jump-not-equal.
-# The graph shows us the two possible paths. The false path
-# will be called if the password is wrong (if it's equal).
+# The graph shows us the two possible paths. The true path
+# will be called if the password is wrong (cmp is not-equal).
 # The compare takes to inputs:
 #   * the user input (var_ch via eax)
 #   * the calculated password (var_4h)
 
 # Let's emulate all the calculations right up to the compare:
 <space> # close command flow graph.
-:aeim
+:aeim # initialise ESIL VM stack and set instruction pointer.
 s # execute each instruction except calls.
 :aess # skip step calls.
 
