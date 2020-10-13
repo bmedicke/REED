@@ -322,6 +322,29 @@ The `crackme_calc` binary calculates the password at runtime. This makes it
 bothersome to get it via static analysis. Even if you have the source
 (which you do: [crackme_calc.c](../crackmes/crackme_calc.c)).
 
+It has been compiled on Linux. Since we're analysing this one on macOS we can not use regular debugging.
+
+```sh
+r2 -A crackme_calc # open and analyse it.
+# the `-A` flag is the same as running `aaa` in Radare2.
+# note that we don't pass the `-d` flag!
+
+#r2
+!uname # Darwin. We're on macOS.
+iq~os # os linux. The binary is compiled for Linux.
+Vpp # start disas view.
+
+# visual mode
+g # seek menu (try tab completion!)
+main # seek to main.
+<space> # toggle control flow graph.
+# see: r2-control-flow-graph.jpg
+```
+
+> r2-control-flow-graph.jpg
+
+<img src="../media/r2-control-flow-graph.jpg"></img>
+
 # scripting with `r2pipe`
 
 # configuration
