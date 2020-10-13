@@ -85,7 +85,7 @@ TODO source this section
 See [[edvac]](#sources-and-further-reading).
 
 Somewhat controversially named solely after John von Neumann this is still
-the base for the most common CPU designs.
+the base for most common CPU designs.
 
 > architecture-von-neumann.jpg
 
