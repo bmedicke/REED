@@ -299,6 +299,7 @@ Vpp # open visual mode (debug view).
 /test # look for a test instruction.
 
 # decide how to patch the program.
+# see: r2-check_pin-pre-patch.jpg
 :s 0x80491c3 # seek to: mov eax, 1 # sets return value to 1 for wrong pins.
 :wa mov eax, 0 # change instruction to set eax to 0 -> return success.
 
