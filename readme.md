@@ -62,6 +62,7 @@ A couple of conventions to make orientation a bit easier:
   * [binutils](#binutils)
   * [binwalk](#binwalk)
   * [dd](#dd)
+  * [xxd](#xxd)
   * [Python 3](#python-3)
   * [Compiler Explorer](#compiler-explorer)
   * [binvis.io](#binvisio)
@@ -933,6 +934,8 @@ See [[binutils]](#sources-and-further-reading).
 ## binwalk
 
 ## dd
+
+## xxd
 
 ## Python 3
 
