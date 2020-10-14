@@ -347,7 +347,7 @@ main # seek to main.
 
 ```sh
 # Alright, we have a compare followed by a jump-not-equal.
-# The graph shows us the two possible paths. The true path
+# The graph shows us the two possible paths. The green "true" path
 # will be called if the password is wrong (cmp is not-equal).
 # The compare takes to inputs:
 #   * the user input (var_ch via eax)
