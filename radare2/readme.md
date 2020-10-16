@@ -23,6 +23,7 @@ how it does things, it's hard to go back.
   * [solving a Linux crackme on macOS with ESIL](#solving-a-linux-crackme-on-macos-with-esil)
 * [scripting with `r2pipe`](#scripting-with-r2pipe)
 * [configuration](#configuration)
+  * [aliases](#aliases)
 * [GUIs](#guis)
 * [sources and further reading](#sources-and-further-reading)
 
@@ -409,6 +410,28 @@ This can be especially useful in combination with `ctrl-r`, the reverse-incremen
 
 It is possible to **write changes to cache** for programs that were opened in read-only mode: `e io.cache=1`.
 Only the file in memory will be changed. This allows you to play with read-only files (instead of getting the `Failed to write` error).
+
+## aliases
+
+Aliases in Radare 2 all start with a `$`. See `$?` for the help.
+It's easiest to use the `ed` command to write them to the configuration file.
+
+You might need to Base64 encode them if your command contains special characters.
+Use `$myalias=-` to open the editor and write the command unencoded, then `$*` to get
+the encoded line for `ed`.
+
+Here are a couple of ideas:
+
+```sh
+# pxr 12@r:SP
+$$=base64:cHhyIDEyQHI6U1A=
+
+# emulate checksec command:
+# $checksec=i~pic,canary,nx,crypto,stripped,static,relocs
+$checksec=base64:aX5waWMsY2FuYXJ5LG54LGNyeXB0byxzdHJpcHBlZCxzdGF0aWMscmVsb2Nz
+```
+
+You can run your alias like any regular command, e.g. `$$`.
 
 # GUIs
 
