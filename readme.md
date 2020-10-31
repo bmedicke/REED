@@ -61,8 +61,10 @@ A couple of conventions to make orientation a bit easier:
   * [Ghidra](#ghidra)
   * [binutils](#binutils)
   * [binwalk](#binwalk)
+  * [BinDiff](#bindiff)
   * [dd](#dd)
   * [xxd](#xxd)
+  * [ldd](#ldd)
   * [pwntools](#pwntools)
   * [ltrace and strace](#ltrace-and-strace)
   * [pmap](#pmap)
@@ -936,9 +938,19 @@ See [[binutils]](#sources-and-further-reading).
 
 ## binwalk
 
+## BinDiff
+
 ## dd
 
 ## xxd
+
+## ldd
+
+print shared object dependencies
+
+```sh
+ldd rot13 # prints shared objects and their addresses in memory.
+```
 
 ## pwntools
 
