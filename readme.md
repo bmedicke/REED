@@ -1,6 +1,8 @@
 # RE🌾ED
 
-notes about reverse engineering and exploit development
+**notes about reverse engineering and exploit development**
+
+![radare2 visual mode](media/r2-visual-mode-hex.jpg)
 
 ---
 
