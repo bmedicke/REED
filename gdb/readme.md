@@ -17,6 +17,20 @@
 
 TODO write short tutorial
 
+* `i b` list breakpoints
+* `d 1` remove first breakpoint
+* `b *main`
+* `r` run
+* `p $rip+0xe9c`
+* `x $rip+0xe9c`
+* `ct` (gef) after ctrl-l
+* `fin` run until return
+* `n` step over (don't descend into functions)
+* `$ 0x80` evaluate expression
+* `checksec`
+* `x/a $rsp` get current stack pointer addr.
+* `bt 2` last 2 stack frames (stack 2 -> neuer rip)
+
 # configuration
 
 GDB looks for a local configuration file under `~/.gdbinit`. Here's a minimal example:
