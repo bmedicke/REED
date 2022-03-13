@@ -36,7 +36,14 @@ A couple of conventions to make orientation a bit easier:
   * [the stack](#the-stack)
   * [the stack at <main+0>](#the-stack-at-main0)
   * [stack frames](#stack-frames)
+* [programming paradigms](#programming-paradigms)
+  * [imperative](#imperative)
+    * [procedural](#procedural)
+    * [object oriented](#object-oriented)
+  * [declerative](#declerative)
+  * [stack-based](#stack-based)
 * [stages of compilation](#stages-of-compilation)
+  * [typing](#typing)
   * [preprocessor](#preprocessor)
   * [compiler](#compiler)
   * [assembler](#assembler)
@@ -430,7 +437,42 @@ If we would continue the execution of `greet()` the process would be the same as
   * move the base and stack pointers to grow the frame
   * push a return address as we call another function
 
+# programming paradigms
+
+## imperative
+
+how to change the state
+
+* Forth
+* assembly
+
+### procedural
+
+gouping instructions into procedures
+
+* C
+
+### object oriented
+
+state and instructions are grouped together
+
+* C++
+
+## declerative
+
+declare desired results
+
+## stack-based
+
+* Reverse Polish notation
+
 # stages of compilation
+
+## typing
+
+* Forth (typeless)
+* C (static)
+* Python (dynamic, duck)
 
 See [[pracbin, p. 12ff]](#sources-and-further-reading).
 
